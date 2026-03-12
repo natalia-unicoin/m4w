@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { getImagePath } from '@/utils/image';
 import { useStyles } from './LedBySection.styles';
 
 const LedBySection = () => {
@@ -21,7 +22,7 @@ const LedBySection = () => {
                             transition={{ duration: 0.8 }}
                         >
                             <img
-                                src="/assets/silvina-moschini-2.jpg"
+                                src={getImagePath("assets/silvina-moschini-2.jpg")}
                                 alt="Silvina Moschini"
                                 className={classes.image}
                             />

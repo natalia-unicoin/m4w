@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { getImagePath } from '@/utils/image';
 import { useModal } from '@/context/ModalContext';
 import { useStyles } from './FoundingMember.styles';
 import { Box } from '@mui/material';
@@ -17,8 +18,8 @@ const FoundingMember = () => {
                     <div className={classes.imageColumn}>
                         <div className={classes.imageWrapper}>
                             <img
-                                src="/assets/founding-member-phone.jpg"
-                                alt="Founding Member"
+                                src={getImagePath("assets/founding-member-phone.jpg")}
+                                alt="Founding Member App Experience"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
                             />
                         </div>
