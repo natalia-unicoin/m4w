@@ -17,7 +17,7 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className={classes.brandColumn}>
                         <div className={classes.logoWrapper}>
-                            <img src={getImagePath("assets/m4w-logo-black.png")} alt="Money4Women" className={classes.logo} />
+                            <img src={getImagePath("assets/logo-alternative.png")} alt="Money4Women" className={classes.logo} />
                         </div>
                         <p className={classes.description}>
                             The Wealth Operating System for High-Performing Women.

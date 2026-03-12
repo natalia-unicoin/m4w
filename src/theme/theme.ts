@@ -26,24 +26,24 @@ const theme = createTheme({
     palette: {
         mode: 'light',
         primary: {
-            main: '#6E61E7', // Primary Purple
+            main: '#FED141', // Limencello (Yellow)
         },
         secondary: {
-            main: '#BFD35B', // Lime Green
+            main: '#B1E4E3', // Summer Green
         },
         info: {
-            main: '#B79DEC', // Light Purple
+            main: '#EBDEFC', // Soft Lavender
         },
         background: {
             default: '#F8F8FA', // Off-white
             paper: '#F8F8FA',
         },
         text: {
-            primary: '#2A2671', // Dark Indigo
-            secondary: '#6E61E7', // Primary Purple
+            primary: '#1A1A1A', // Dark Text 
+            secondary: '#4B5563', // Dark Gray
         },
         common: {
-            black: '#2A2671',
+            black: '#1A1A1A',
             white: '#ffffff', // White
         }
     },
@@ -53,36 +53,36 @@ const theme = createTheme({
             fontFamily: inter.style.fontFamily,
             fontWeight: 700,
             lineHeight: 1.1,
-            color: '#2A2671', // Indigo
+            color: '#1A1A1A', // Dark
         },
         h2: {
             fontFamily: inter.style.fontFamily,
             fontWeight: 700,
-            color: '#2A2671',
+            color: '#1A1A1A',
         },
         h3: {
             fontFamily: inter.style.fontFamily,
             fontWeight: 700,
-            color: '#2A2671',
+            color: '#1A1A1A',
         },
         h4: {
             fontFamily: inter.style.fontFamily,
             fontWeight: 700,
-            color: '#2A2671',
+            color: '#1A1A1A',
         },
         h5: {
             fontFamily: inter.style.fontFamily,
             fontWeight: 700,
-            color: '#2A2671',
+            color: '#1A1A1A',
         },
         h6: {
             fontFamily: inter.style.fontFamily,
             fontWeight: 700,
-            color: '#2A2671',
+            color: '#1A1A1A',
         },
         body1: {
             fontFamily: inter.style.fontFamily,
-            color: '#2A2671',
+            color: '#1A1A1A',
         },
         subtitle1: {
             fontFamily: caveat.style.fontFamily,
@@ -93,7 +93,7 @@ const theme = createTheme({
             styleOverrides: {
                 body: {
                     backgroundColor: '#F8F8FA',
-                    color: '#2A2671',
+                    color: '#1A1A1A',
                 },
             },
         },
@@ -106,18 +106,18 @@ const theme = createTheme({
                     padding: '12px 24px',
                 },
                 containedPrimary: {
-                    backgroundColor: '#6E61E7',
-                    color: '#ffffff',
+                    backgroundColor: '#FED141',
+                    color: '#1A1A1A',
                     '&:hover': {
-                        backgroundColor: '#2A2671',
+                        backgroundColor: '#E5BC3A',
                     },
                 },
                 containedSecondary: {
-                    backgroundColor: '#BFD35B',
-                    color: '#2A2671',
+                    backgroundColor: '#B1E4E3',
+                    color: '#1A1A1A',
                     '&:hover': {
-                        backgroundColor: '#2A2671',
-                        color: '#BFD35B',
+                        backgroundColor: '#9FCDCC',
+                        color: '#1A1A1A',
                     },
                 },
             },
