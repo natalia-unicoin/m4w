@@ -148,7 +148,7 @@ const MasterclassModal = () => {
                                     }
                                 }}
                             >
-                                Secure My Spot
+                                Registrate
                             </Button>
                         </form>
                     </motion.div>
