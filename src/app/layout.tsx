@@ -1,0 +1,39 @@
+import type { Metadata } from "next";
+// import "./globals.css"; // Commented out for MUI migration
+import ThemeRegistry from "@/theme/ThemeRegistry";
+import { ModalProvider } from "@/context/ModalContext";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import JoinModal from "@/components/JoinModal";
+import ManifestoModal from "@/components/ManifestoModal";
+import MasterclassModal from "@/components/MasterclassModal";
+
+export const metadata: Metadata = {
+  title: "Money4Women - The Wealth Operating System",
+  description: "A decentralized collective for creators, builders, investors, and connectors. Own your work, own your future.",
+  keywords: "web3, collective, creators, builders, blockchain, community",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="antialiased selection:bg-[#EBE563] selection:text-black">
+        <ThemeRegistry>
+          <ModalProvider>
+            <Navbar />
+            {children}
+            <Footer />
+            <JoinModal />
+            <ManifestoModal />
+            <MasterclassModal />
+          </ModalProvider>
+        </ThemeRegistry>
+      </body>
+    </html>
+  );
+}
+
