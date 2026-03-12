@@ -35,8 +35,8 @@ const theme = createTheme({
             main: '#B79DEC', // Light Purple
         },
         background: {
-            default: '#ffffff', // White
-            paper: '#ffffff',
+            default: '#F8F8FA', // Off-white
+            paper: '#F8F8FA',
         },
         text: {
             primary: '#2A2671', // Dark Indigo
@@ -92,7 +92,7 @@ const theme = createTheme({
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    backgroundColor: '#ffffff',
+                    backgroundColor: '#F8F8FA',
                     color: '#2A2671',
                 },
             },

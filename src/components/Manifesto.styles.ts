@@ -6,7 +6,7 @@ export const useStyles = makeStyles()((theme) => ({
         alignItems: 'center',
         paddingTop: theme.spacing(6), // py-12
         paddingBottom: theme.spacing(6),
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#F1F1F1',
         color: theme.palette.common.black,
         [theme.breakpoints.up('md')]: {
             paddingTop: theme.spacing(10), // py-20

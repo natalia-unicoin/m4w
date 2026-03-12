@@ -2,9 +2,10 @@ import { makeStyles } from 'tss-react/mui';
 
 export const useStyles = makeStyles()((theme) => ({
     section: {
+        position: 'relative',
         paddingTop: theme.spacing(10), // py-20
         paddingBottom: theme.spacing(10),
-        backgroundColor: theme.palette.common.white, // Changed to white as requested
+        backgroundColor: '#F8F8FA', // Changed to match site base
         color: theme.palette.text.primary,
         overflow: 'hidden',
         [theme.breakpoints.up('md')]: {

@@ -7,7 +7,7 @@ export const useStyles = makeStyles()((theme) => ({
         left: 0,
         right: 0,
         zIndex: 50,
-        backgroundColor: theme.palette.common.white,
+        backgroundColor: '#F8F8FA',
         borderBottom: `1px solid ${theme.palette.grey[100]}`,
     },
     container: {
@@ -140,7 +140,7 @@ export const useStyles = makeStyles()((theme) => ({
         right: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: theme.palette.common.white,
+        backgroundColor: '#F8F8FA',
         zIndex: 60,
         padding: theme.spacing(4), // p-8
         display: 'flex',

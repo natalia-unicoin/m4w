@@ -2,9 +2,9 @@ import { makeStyles } from 'tss-react/mui';
 
 export const useStyles = makeStyles()((theme) => ({
     section: {
-        paddingTop: theme.spacing(6), // py-12
+        backgroundColor: '#F8F8FA',
+        paddingTop: theme.spacing(10),
         paddingBottom: theme.spacing(6),
-        backgroundColor: theme.palette.common.white,
         color: theme.palette.text.primary,
         overflow: 'hidden',
         [theme.breakpoints.up('md')]: {

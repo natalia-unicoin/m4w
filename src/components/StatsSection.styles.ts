@@ -4,7 +4,8 @@ export const useStyles = makeStyles()((theme) => ({
     section: {
         paddingTop: theme.spacing(10), // py-20
         paddingBottom: theme.spacing(10),
-        backgroundColor: '#F9F9F9', // Off-white to distinguish from previous section
+        backgroundColor: '#F1F1F1', // Off-white to distinguish from previous section
+        color: theme.palette.common.black,
         borderTop: `1px solid ${theme.palette.grey[200]}`,
         [theme.breakpoints.up('md')]: {
             paddingTop: theme.spacing(16), // py-32
