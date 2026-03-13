@@ -55,10 +55,14 @@ export const useStyles = makeStyles()((theme) => ({
     },
     imageWrapper: {
         position: 'relative',
-        height: '100%', // Take full height
-        minHeight: '400px', // Fallback for mobile
-        borderRadius: '1.5rem', // rounded-3xl
+        width: '100%',
+        height: '600px',
+        borderRadius: '24px', // Apple-style rounded corners
         overflow: 'hidden',
+        boxShadow: '0 20px 40px rgba(0,0,0,0.1)', // Subtle soft shadow
+        [theme.breakpoints.up('md')]: {
+            height: '700px',
+        }
     },
     imagePlaceholder: {
         width: '100%',
