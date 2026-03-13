@@ -53,6 +53,7 @@ const Hero = () => {
                     </button>
                     <button
                         className={classes.secondaryButton}
+                        style={isPastel ? { borderColor: '#ffffff', color: '#ffffff' } : undefined}
                     >
                         Register for the Masterclass
                     </button>
