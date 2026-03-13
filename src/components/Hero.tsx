@@ -2,12 +2,15 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import { useModal } from '@/context/ModalContext';
 import { useStyles } from './Hero.styles';
 
 const Hero = () => {
     const { classes } = useStyles();
     const { openJoinModal } = useModal();
+    const pathname = usePathname();
+    const isPastel = pathname === '/alternate';
     return (
         <section className={classes.section}>
             {/* Background Image */}
@@ -17,6 +20,7 @@ const Hero = () => {
             <div className={classes.content}>
                 <motion.h1
                     className={classes.title}
+                    style={isPastel ? { color: '#ffffff' } : undefined}
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -27,6 +31,7 @@ const Hero = () => {
 
                 <motion.p
                     className={classes.subtitle}
+                    style={isPastel ? { color: '#ffffff' } : undefined}
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
