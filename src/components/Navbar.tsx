@@ -86,7 +86,7 @@ const Navbar = () => {
                 <div className={classes.container}>
                     {/* Logo */}
                     <Link href="/" className={classes.logoLink}>
-                        <img src={getImagePath("assets/m4w-logo-black.png")} alt="Money4Women" className={classes.logoImage} style={{ maxHeight: '32px', width: 'auto' }} />
+                        <img src={getImagePath("images/logo-main-1.png")} alt="Money4Women" className={classes.logoImage} style={{ maxHeight: '32px', width: 'auto' }} />
                     </Link>
 
                     <div className={classes.controls}>
@@ -144,7 +144,7 @@ const Navbar = () => {
                             {/* Menu Logo */}
                             <div className={classes.menuLogo}>
                                 <Link href="/" onClick={() => setIsMenuOpen(false)}>
-                                    <img src={getImagePath('assets/m4w-logo-black.png')} alt="Money4Women" className="w-full" style={{ maxWidth: '160px' }} />
+                                    <img src={getImagePath('images/logo-main-1.png')} alt="Money4Women" className="w-full" style={{ maxWidth: '160px' }} />
                                 </Link>
                             </div>
 

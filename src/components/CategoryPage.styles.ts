@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles()((theme) => ({
     pageContainer: {
         minHeight: '100vh',
-        backgroundColor: '#F8F8FA',
+        backgroundColor: '#FDF2EC',
         color: theme.palette.common.black,
         fontFamily: theme.typography.fontFamily,
         '::selection': {
@@ -107,7 +107,7 @@ export const useStyles = makeStyles()((theme) => ({
     scrollTextSection: {
         position: 'relative',
         zIndex: 10,
-        backgroundColor: '#F8F8FA',
+        backgroundColor: '#FDF2EC',
         paddingTop: theme.spacing(16), // py-32
         paddingBottom: theme.spacing(16),
         paddingLeft: theme.spacing(3), // px-6
@@ -220,7 +220,7 @@ export const useStyles = makeStyles()((theme) => ({
     storiesSection: {
         position: 'relative',
         zIndex: 10,
-        backgroundColor: '#F8F8FA',
+        backgroundColor: '#FDF2EC',
         paddingTop: theme.spacing(16), // py-32
         paddingBottom: theme.spacing(16),
         overflow: 'hidden',
@@ -303,7 +303,7 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     tierCard: {
-        backgroundColor: '#F8F8FA',
+        backgroundColor: '#FDF2EC',
         border: `1px solid ${theme.palette.grey[200]}`,
         borderRadius: '1.5rem', // rounded-3xl
         padding: theme.spacing(5), // p-10
@@ -343,7 +343,7 @@ export const useStyles = makeStyles()((theme) => ({
     footerSection: {
         position: 'relative',
         zIndex: 10,
-        backgroundColor: '#F8F8FA',
+        backgroundColor: '#FDF2EC',
         paddingTop: theme.spacing(20), // py-40
         paddingBottom: theme.spacing(20),
         paddingLeft: theme.spacing(3),
@@ -384,7 +384,7 @@ export const useStyles = makeStyles()((theme) => ({
         paddingTop: theme.spacing(10), // py-20
         paddingBottom: theme.spacing(10),
         borderTop: `1px solid ${theme.palette.grey[200]}`,
-        backgroundColor: '#F8F8FA',
+        backgroundColor: '#FDF2EC',
     },
     otherCategoriesTitle: {
         fontSize: '0.875rem', // text-sm

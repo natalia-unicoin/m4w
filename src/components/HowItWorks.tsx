@@ -39,7 +39,7 @@ const SystemSection = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className={classes.leadText}
                     >
-                        Money4Women introduces a structured approach to building wealth intentionally.
+                        Money4Women introduces a structured approach to building wealth&nbsp;intentionally.
                     </motion.p>
 
                     <motion.p
@@ -49,8 +49,8 @@ const SystemSection = () => {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         className={classes.description}
                     >
-                        Inside the program, you develop a clear view of your finances, install systems that support long-term growth, and learn disciplined investment frameworks across traditional and digital assets.<br /><br />
-                        The goal is simple: help you transform financial success into lasting financial strength.
+                        Inside the program, you develop a clear view of your finances, install systems that support long-term growth, and learn disciplined investment frameworks across traditional and digital&nbsp;assets.<br /><br />
+                        The goal is simple: help you transform financial success into lasting financial&nbsp;strength.
                     </motion.p>
 
                     <motion.div

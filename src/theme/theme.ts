@@ -26,25 +26,25 @@ const theme = createTheme({
     palette: {
         mode: 'light',
         primary: {
-            main: '#6E61E7', // Primary Purple
+            main: '#2A2671', // Deep Navy / Buttons
         },
         secondary: {
             main: '#BFD35B', // Lime Green
         },
         info: {
-            main: '#B79DEC', // Light Purple
+            main: '#B79DEC', // Soft Lavender
         },
         background: {
-            default: '#F8F8FA', // Off-white
-            paper: '#F8F8FA',
+            default: '#FDF2EC', // Peach/Off-white background
+            paper: '#FDF2EC',
         },
         text: {
-            primary: '#2A2671', // Dark Indigo
-            secondary: '#6E61E7', // Primary Purple
+            primary: '#2A2671', // Deep Navy/Indigo text
+            secondary: '#6E61E7',
         },
         common: {
             black: '#2A2671',
-            white: '#ffffff', // White
+            white: '#ffffff',
         }
     },
     typography: {
@@ -92,7 +92,7 @@ const theme = createTheme({
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    backgroundColor: '#F8F8FA',
+                    backgroundColor: '#FDF2EC',
                     color: '#2A2671',
                 },
             },
@@ -106,10 +106,10 @@ const theme = createTheme({
                     padding: '12px 24px',
                 },
                 containedPrimary: {
-                    backgroundColor: '#6E61E7',
+                    backgroundColor: '#2A2671',
                     color: '#ffffff',
                     '&:hover': {
-                        backgroundColor: '#2A2671',
+                        backgroundColor: '#6E61E7',
                     },
                 },
                 containedSecondary: {
