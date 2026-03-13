@@ -56,8 +56,8 @@ export const useStyles = makeStyles()((theme) => ({
     imageWrapper: {
         position: 'relative',
         height: '100%', // Take full height
-        minHeight: '400px', // Fallback for mobile
-        maxHeight: '600px', // Prevent the portrait from getting too tall
+        minHeight: '360px', // Fallback for mobile
+        maxHeight: '530px', // Prevent the portrait from getting too tall
         borderRadius: '1.5rem', // rounded-3xl
         overflow: 'hidden',
     },
