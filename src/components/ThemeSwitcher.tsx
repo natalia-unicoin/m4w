@@ -26,7 +26,7 @@ export default function ThemeSwitcher() {
                 <Box
                     onClick={toggleTheme}
                     sx={{
-                        backgroundColor: isPastel ? '#2A2671' : '#FED141',
+                        backgroundColor: isPastel ? '#2A2671' : '#CAD83B',
                         color: isPastel ? '#ffffff' : '#1A1A1A',
                         width: 48,
                         height: 48,
