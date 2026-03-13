@@ -11,6 +11,7 @@ const Footer = () => {
     const pathname = usePathname();
     const isPastel = pathname === '/alternate';
     const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png';
+    const footerLogoStyle = isPastel ? { maxWidth: '150px', height: 'auto' } : undefined;
     const platformItems = ["Home", "Founding Member", "How It Works"];
     const communityItems = ["Community", "Apply", "Events"];
     const legalItems = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
@@ -22,7 +23,7 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className={classes.brandColumn}>
                         <div className={classes.logoWrapper}>
-                            <img src={getImagePath(logoSrc)} alt="Money4Women" className={classes.logo} />
+                            <img src={getImagePath(logoSrc)} alt="Money4Women" className={classes.logo} style={footerLogoStyle} />
                         </div>
                         <p className={classes.description}>
                             The Wealth Operating System for High-Performing Women.

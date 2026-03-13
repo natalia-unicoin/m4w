@@ -18,6 +18,10 @@ const Navbar = () => {
     const isPastel = pathname === '/alternate'; // Added
     const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png'; // Added
 
+    // Conditional styling to fix the massive size of the alternate logo
+    const logoStyle = isPastel ? { maxHeight: '20px', width: 'auto' } : { maxHeight: '32px', width: 'auto' };
+    const mobileMenuLogoStyle = isPastel ? { maxWidth: '130px' } : { maxWidth: '160px' };
+
     useMotionValueEvent(scrollY, "change", (latest) => {
         const previous = scrollY.getPrevious();
         if (previous && latest > previous && latest > 150) {
@@ -90,7 +94,7 @@ const Navbar = () => {
                 <div className={classes.container}>
                     {/* Logo */}
                     <Link href="/" className={classes.logoLink}>
-                        <img src={getImagePath(logoSrc)} alt="Money4Women" className={classes.logoImage} style={{ maxHeight: '32px', width: 'auto' }} />
+                        <img src={getImagePath(logoSrc)} alt="Money4Women" className={classes.logoImage} style={logoStyle} />
                     </Link>
 
                     <div className={classes.controls}>
@@ -148,7 +152,7 @@ const Navbar = () => {
                             {/* Menu Logo */}
                             <div className={classes.menuLogo}>
                                 <Link href="/" onClick={() => setIsMenuOpen(false)}>
-                                    <img src={getImagePath(logoSrc)} alt="Money4Women" className="w-full" style={{ maxWidth: '160px' }} />
+                                    <img src={getImagePath(logoSrc)} alt="Money4Women" className="w-full" style={mobileMenuLogoStyle} />
                                 </Link>
                             </div>
 
