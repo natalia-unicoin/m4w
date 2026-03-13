@@ -73,7 +73,7 @@ const Footer = () => {
                 <div className={classes.disclaimerContainer}>
                     <h5 className={classes.disclaimerTitle}>Disclaimer</h5>
                     <p className={classes.disclaimerText}>
-                        Money4Women provides financial education and general frameworks for managing money and investing. It does not provide personalized financial, tax, or legal advice and does not solicit the purchase or sale of securities or cryptoassets.
+                        <strong>Money4Women</strong> provides financial education and general frameworks for managing money and investing. It does not provide personalized financial, tax, or legal advice and does not solicit the purchase or sale of securities or cryptoassets.
                     </p>
                     <p className={classes.disclaimerText}>
                         Participants should conduct independent research and consult licensed professionals before making financial decisions.

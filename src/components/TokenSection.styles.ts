@@ -7,7 +7,7 @@ export const useStyles = makeStyles()((theme) => ({
         alignItems: 'center',
         paddingTop: theme.spacing(6), // py-12
         paddingBottom: theme.spacing(6),
-        backgroundColor: theme.palette.common.white,
+        backgroundColor: '#F8F8FA',
         color: theme.palette.text.primary,
         overflow: 'hidden',
         [theme.breakpoints.up('md')]: {
@@ -77,7 +77,7 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     card: {
-        backgroundColor: theme.palette.common.white,
+        backgroundColor: '#F8F8FA',
         padding: theme.spacing(4), // p-8
         borderRadius: '1.5rem', // rounded-3xl
         border: `1px solid ${theme.palette.grey[200]}`,

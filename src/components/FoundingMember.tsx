@@ -50,7 +50,7 @@ const FoundingMember = () => {
                                 whileTap={{ scale: 0.95 }}
                                 className={classes.button}
                             >
-                                Join Money4Women
+                                Join <strong>Money4Women</strong>
                             </motion.button>
                         </motion.div>
                     </div>

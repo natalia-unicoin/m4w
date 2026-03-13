@@ -28,7 +28,7 @@ const CommunitySection = () => {
                     <div className={classes.contentColumn}>
                         <div className={classes.textContent}>
                             <p className={classes.leadText}>
-                                Money4Women connects ambitious professionals across industries, cities, and disciplines.
+                                <strong>Money4Women</strong> connects ambitious professionals across industries, cities, and disciplines.
                             </p>
                             <p className={classes.description}>
                                 Inside the community you will meet builders creating new opportunities, investors developing disciplined portfolios, and leaders using financial capability to expand their impact.<br /><br />

@@ -34,7 +34,7 @@ const JoinFlow = () => {
                     >
                         Your career created opportunity.<br /><br />
                         Now build a financial system that supports your future.<br /><br />
-                        Money4Women helps you structure your finances, invest with discipline, and connect with a community committed to long-term growth.
+                        <strong>Money4Women</strong> helps you structure your finances, invest with discipline, and connect with a community committed to long-term growth.
                     </motion.p>
 
                     <motion.div
@@ -48,7 +48,7 @@ const JoinFlow = () => {
                             onClick={openJoinModal}
                             className={classes.primaryButton}
                         >
-                            Join Money4Women
+                            Join <strong>Money4Women</strong>
                         </button>
                         <button onClick={openMasterclass} className={classes.secondaryButton}>
                             Register for the Masterclass

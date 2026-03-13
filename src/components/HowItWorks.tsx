@@ -39,7 +39,7 @@ const SystemSection = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className={classes.leadText}
                     >
-                        Money4Women introduces a structured approach to building wealth&nbsp;intentionally.
+                        <strong>Money4Women</strong> introduces a structured approach to building wealth&nbsp;intentionally.
                     </motion.p>
 
                     <motion.p

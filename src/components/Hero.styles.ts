@@ -9,7 +9,7 @@ export const useStyles = makeStyles()((theme) => ({
         alignItems: 'flex-end', // Push content to bottom
         justifyContent: 'center',
         overflow: 'hidden',
-        backgroundColor: theme.palette.common.white,
+        backgroundColor: '#F8F8FA',
         color: theme.palette.text.primary,
         paddingBottom: theme.spacing(8), // Add padding at bottom
         [theme.breakpoints.up('md')]: {

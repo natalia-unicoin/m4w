@@ -49,7 +49,7 @@ const LedBySection = () => {
                             className={classes.textContent}
                         >
                             <p className={classes.leadText}>
-                                Money4Women is led by technology entrepreneur and investor Silvina Moschini.
+                                <strong>Money4Women</strong> is led by technology entrepreneur and investor Silvina Moschini.
                             </p>
                             <p className={classes.description}>
                                 She is known for building and scaling global companies, including a remote-work platform that achieved a $1B valuation during the pandemic.
@@ -58,7 +58,7 @@ const LedBySection = () => {
                                 Through her work and advocacy, she has consistently championed financial empowerment and entrepreneurship for women around the world.
                             </p>
                             <p className={classes.description}>
-                                Money4Women expands that mission through education, community, and long-term wealth building.
+                                <strong>Money4Women</strong> expands that mission through education, community, and long-term wealth building.
                             </p>
                         </motion.div>
                     </div>

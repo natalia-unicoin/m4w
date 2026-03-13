@@ -44,7 +44,7 @@ const Hero = () => {
                         onClick={openJoinModal}
                         className={classes.ctaButton}
                     >
-                        Join Money4Women
+                        Join <strong>Money4Women</strong>
                     </button>
                     <button
                         className={classes.secondaryButton}

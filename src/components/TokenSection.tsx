@@ -38,7 +38,7 @@ const FoundingOfferSection = () => {
             color: "#BFD35B", // Lime Green
             items: [
                 "Early access to Unicoin allocations.",
-                "Tickets to global Money4Women events.",
+                "Tickets to global <strong>Money4Women</strong> events.",
                 "Priority access to new initiatives.",
                 "Founding Member digital ID."
             ]

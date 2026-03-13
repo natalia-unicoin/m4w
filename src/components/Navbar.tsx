@@ -95,7 +95,7 @@ const Navbar = () => {
                             onClick={openJoinModal}
                             className={classes.joinButton}
                         >
-                            Join Money4Women
+                            Join <strong>Money4Women</strong>
                         </button>
 
                         {/* Dummy Language Selector */}

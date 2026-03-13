@@ -26,7 +26,7 @@ const WhyThisMomentMatters = () => {
                             A historic wealth transfer is underway. In the coming decade, women are expected to control a significant share of global investable wealth.
                         </p>
                         <p className={classes.description}>
-                            Money4Women exists to ensure you are prepared to navigate that shift with clarity, knowledge, and long-term strategy.<br /><br />
+                            <strong>Money4Women</strong> exists to ensure you are prepared to navigate that shift with clarity, knowledge, and long-term strategy.<br /><br />
                             This movement focuses on financial education, disciplined systems, and responsible investing principles.
                         </p>
                     </div>

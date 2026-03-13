@@ -222,7 +222,7 @@ export const useStyles = makeStyles()((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        backgroundColor: theme.palette.common.white,
+        backgroundColor: '#F8F8FA',
         borderWidth: '2px', // border-2
         borderStyle: 'solid',
     },
