@@ -4,8 +4,13 @@ import React from 'react';
 import { getImagePath } from '@/utils/image';
 import { useStyles } from './Footer.styles';
 
+import { usePathname } from 'next/navigation';
+
 const Footer = () => {
     const { classes } = useStyles();
+    const pathname = usePathname();
+    const isPastel = pathname === '/pastel';
+    const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png';
     const platformItems = ["Home", "Founding Member", "How It Works"];
     const communityItems = ["Community", "Apply", "Events"];
     const legalItems = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
@@ -17,7 +22,7 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className={classes.brandColumn}>
                         <div className={classes.logoWrapper}>
-                            <img src={getImagePath("images/logo-main-1.png")} alt="Money4Women" className={classes.logo} />
+                            <img src={getImagePath(logoSrc)} alt="Money4Women" className={classes.logo} />
                         </div>
                         <p className={classes.description}>
                             The Wealth Operating System for High-Performing Women.

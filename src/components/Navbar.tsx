@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 import { getImagePath } from '@/utils/image';
 import { useModal } from '@/context/ModalContext';
 import { useStyles } from './Navbar.styles';
@@ -13,6 +14,9 @@ const Navbar = () => {
     const { scrollY } = useScroll();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hidden, setHidden] = useState(false);
+    const pathname = usePathname(); // Added
+    const isPastel = pathname === '/pastel'; // Added
+    const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png'; // Added
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         const previous = scrollY.getPrevious();
@@ -86,7 +90,7 @@ const Navbar = () => {
                 <div className={classes.container}>
                     {/* Logo */}
                     <Link href="/" className={classes.logoLink}>
-                        <img src={getImagePath("images/logo-main-1.png")} alt="Money4Women" className={classes.logoImage} style={{ maxHeight: '32px', width: 'auto' }} />
+                        <img src={getImagePath(logoSrc)} alt="Money4Women" className={classes.logoImage} style={{ maxHeight: '32px', width: 'auto' }} />
                     </Link>
 
                     <div className={classes.controls}>
@@ -144,7 +148,7 @@ const Navbar = () => {
                             {/* Menu Logo */}
                             <div className={classes.menuLogo}>
                                 <Link href="/" onClick={() => setIsMenuOpen(false)}>
-                                    <img src={getImagePath('images/logo-main-1.png')} alt="Money4Women" className="w-full" style={{ maxWidth: '160px' }} />
+                                    <img src={getImagePath(logoSrc)} alt="Money4Women" className="w-full" style={{ maxWidth: '160px' }} />
                                 </Link>
                             </div>
 
