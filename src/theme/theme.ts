@@ -13,81 +13,25 @@ const caveat = Caveat({
     display: 'swap',
 });
 
-const theme = createTheme({
+const commonSettings = {
     breakpoints: {
-        values: {
-            xs: 0,
-            sm: 768,
-            md: 1024,
-            lg: 1200,
-            xl: 1440,
-        },
-    },
-    palette: {
-        mode: 'light',
-        primary: {
-            main: '#2A2671', // Deep Navy / Buttons
-        },
-        secondary: {
-            main: '#BFD35B', // Lime Green
-        },
-        info: {
-            main: '#B79DEC', // Soft Lavender
-        },
-        background: {
-            default: '#F8F8FA', // Peach/Off-white background
-            paper: '#F8F8FA',
-        },
-        text: {
-            primary: '#2A2671', // Deep Navy/Indigo text
-            secondary: '#6E61E7',
-        },
-        common: {
-            black: '#2A2671',
-            white: '#ffffff',
-        }
+        values: { xs: 0, sm: 768, md: 1024, lg: 1200, xl: 1440 },
     },
     typography: {
         fontFamily: inter.style.fontFamily,
-        h1: {
-            fontFamily: inter.style.fontFamily,
-            fontWeight: 700,
-            lineHeight: 1.1,
-            color: '#2A2671', // Indigo
-        },
-        h2: {
-            fontFamily: inter.style.fontFamily,
-            fontWeight: 700,
-            color: '#2A2671',
-        },
-        h3: {
-            fontFamily: inter.style.fontFamily,
-            fontWeight: 700,
-            color: '#2A2671',
-        },
-        h4: {
-            fontFamily: inter.style.fontFamily,
-            fontWeight: 700,
-            color: '#2A2671',
-        },
-        h5: {
-            fontFamily: inter.style.fontFamily,
-            fontWeight: 700,
-            color: '#2A2671',
-        },
-        h6: {
-            fontFamily: inter.style.fontFamily,
-            fontWeight: 700,
-            color: '#2A2671',
-        },
-        body1: {
-            fontFamily: inter.style.fontFamily,
-            color: '#2A2671',
-        },
-        subtitle1: {
-            fontFamily: caveat.style.fontFamily,
-        }
+        h1: { fontFamily: inter.style.fontFamily, fontWeight: 700, lineHeight: 1.1 },
+        h2: { fontFamily: inter.style.fontFamily, fontWeight: 700 },
+        h3: { fontFamily: inter.style.fontFamily, fontWeight: 700 },
+        h4: { fontFamily: inter.style.fontFamily, fontWeight: 700 },
+        h5: { fontFamily: inter.style.fontFamily, fontWeight: 700 },
+        h6: { fontFamily: inter.style.fontFamily, fontWeight: 700 },
+        body1: { fontFamily: inter.style.fontFamily },
+        subtitle1: { fontFamily: caveat.style.fontFamily },
     },
+};
+
+export const mainTheme = createTheme({
+    ...commonSettings,
     components: {
         MuiCssBaseline: {
             styleOverrides: {
@@ -124,6 +68,60 @@ const theme = createTheme({
             },
         },
     },
+    palette: {
+        mode: 'light',
+        primary: { main: '#2A2671' },
+        secondary: { main: '#BFD35B' },
+        info: { main: '#B79DEC' },
+        background: { default: '#F8F8FA', paper: '#F8F8FA' },
+        text: { primary: '#2A2671', secondary: '#6E61E7' },
+        common: { black: '#2A2671', white: '#ffffff' }
+    },
 });
 
-export default theme;
+export const altTheme = createTheme({
+    ...commonSettings,
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: {
+                    backgroundColor: '#F8F8FA',
+                    color: '#1A1A1A',
+                    textWrap: 'balance',
+                },
+            },
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    borderRadius: 9999,
+                    textTransform: 'uppercase',
+                    fontWeight: 700,
+                    padding: '12px 24px',
+                },
+                containedPrimary: {
+                    backgroundColor: '#FED141',
+                    color: '#1A1A1A',
+                    '&:hover': { backgroundColor: '#eebf31' },
+                },
+                containedSecondary: {
+                    backgroundColor: '#B1E4E3',
+                    color: '#1A1A1A',
+                    '&:hover': { backgroundColor: '#9adcdb' },
+                },
+            },
+        },
+    },
+    palette: {
+        mode: 'light',
+        primary: { main: '#FED141' },
+        secondary: { main: '#B1E4E3' },
+        info: { main: '#EBDEFC' },
+        background: { default: '#F8F8FA', paper: '#F8F8FA' },
+        text: { primary: '#1A1A1A', secondary: '#4A4A4A' },
+        common: { black: '#1A1A1A', white: '#ffffff' }
+    },
+});
+
+// Default to mainTheme to avoid breaking external direct imports (if any)
+export default mainTheme;
