@@ -40,6 +40,8 @@ export const useStyles = makeStyles()((theme) => ({
     },
     imageColumn: {
         width: '100%',
+        position: 'relative',
+        minHeight: '400px', // Ensure it has volume on mobile
         [theme.breakpoints.up('md')]: {
             width: '50%', // w-1/2
         }
@@ -54,15 +56,14 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     imageWrapper: {
-        position: 'relative',
+        position: 'absolute',
+        top: 0,
+        left: 0,
         width: '100%',
-        height: '600px',
+        height: '100%',
         borderRadius: '24px', // Apple-style rounded corners
         overflow: 'hidden',
         boxShadow: '0 20px 40px rgba(0,0,0,0.1)', // Subtle soft shadow
-        [theme.breakpoints.up('md')]: {
-            height: '700px',
-        }
     },
     imagePlaceholder: {
         width: '100%',
