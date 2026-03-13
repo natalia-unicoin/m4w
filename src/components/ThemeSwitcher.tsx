@@ -27,7 +27,7 @@ export default function ThemeSwitcher() {
                     onClick={toggleTheme}
                     sx={{
                         backgroundColor: isPastel ? '#2A2671' : '#CAD83B',
-                        color: isPastel ? '#ffffff' : '#1A1A1A',
+                        color: isPastel ? '#ffffff' : '#2C2C2C',
                         width: 48,
                         height: 48,
                         borderRadius: '50%',
