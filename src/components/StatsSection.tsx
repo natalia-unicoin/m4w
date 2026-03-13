@@ -2,12 +2,15 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import { useModal } from '@/context/ModalContext';
 import { useStyles } from './StatsSection.styles';
 
 const CommunitySection = () => {
     const { classes } = useStyles();
     const { openJoinModal } = useModal();
+    const pathname = usePathname();
+    const isPastel = pathname === '/alternate';
 
     return (
         <section className={classes.section}>
@@ -17,7 +20,7 @@ const CommunitySection = () => {
                     <div className={classes.textColumn}>
                         <h2 className={classes.title}>
                             A Global <br />
-                            <span className={classes.highlight}>Community</span><br />
+                            <span className={classes.highlight} style={isPastel ? { color: '#A88AEE' } : undefined}>Community</span><br />
                             for Builders,<br />
                             Investors, and<br />
                             Leaders.
@@ -40,6 +43,7 @@ const CommunitySection = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={classes.button}
+                            style={isPastel ? { backgroundColor: '#A88AEE', color: '#2C2C2C' } : undefined}
                         >
                             Apply to the Community
                         </motion.button>
