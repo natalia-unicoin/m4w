@@ -13,7 +13,7 @@ function ThemeConsumer({ children }: { children: React.ReactNode }) {
     const { mode, setThemeMode } = useThemeContext();
     const pathname = usePathname();
 
-    const isPastelPath = pathname === '/pastel';
+    const isPastelPath = pathname === '/alternate';
     const currentTheme = isPastelPath ? altTheme : (mode === 'alt' ? altTheme : mainTheme);
 
     // Sync context state if navigated directly

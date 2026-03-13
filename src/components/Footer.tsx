@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation';
 const Footer = () => {
     const { classes } = useStyles();
     const pathname = usePathname();
-    const isPastel = pathname === '/pastel';
+    const isPastel = pathname === '/alternate';
     const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png';
     const platformItems = ["Home", "Founding Member", "How It Works"];
     const communityItems = ["Community", "Apply", "Events"];

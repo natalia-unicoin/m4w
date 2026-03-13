@@ -10,13 +10,13 @@ export default function ThemeSwitcher() {
 
     if (pathname === '/colortest') return null;
 
-    const isPastel = pathname === '/pastel';
+    const isPastel = pathname === '/alternate';
 
     const toggleTheme = () => {
         if (isPastel) {
             router.push('/');
         } else {
-            router.push('/pastel');
+            router.push('/alternate');
         }
     };
 

@@ -15,7 +15,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hidden, setHidden] = useState(false);
     const pathname = usePathname(); // Added
-    const isPastel = pathname === '/pastel'; // Added
+    const isPastel = pathname === '/alternate'; // Added
     const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png'; // Added
 
     useMotionValueEvent(scrollY, "change", (latest) => {
