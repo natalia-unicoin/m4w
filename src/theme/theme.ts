@@ -70,8 +70,8 @@ export const mainTheme = createTheme({
     },
     palette: {
         mode: 'light',
-        primary: { main: '#2A2671', contrastText: '#ffffff' },
-        secondary: { main: '#BFD35B', contrastText: '#2A2671' },
+        primary: { main: '#2A2671' },
+        secondary: { main: '#BFD35B' },
         info: { main: '#B79DEC' },
         background: { default: '#F8F8FA', paper: '#F8F8FA' },
         text: { primary: '#2A2671', secondary: '#6E61E7' },
@@ -101,12 +101,12 @@ export const altTheme = createTheme({
                 },
                 containedPrimary: {
                     backgroundColor: '#CAD83B',
-                    color: '#2C2C2C',
+                    color: '#ffffff',
                     '&:hover': { backgroundColor: '#B8C535' },
                 },
                 containedSecondary: {
                     backgroundColor: '#FD9A34',
-                    color: '#2C2C2C',
+                    color: '#ffffff',
                     '&:hover': { backgroundColor: '#E48A2E' },
                 },
             },
@@ -114,9 +114,9 @@ export const altTheme = createTheme({
     },
     palette: {
         mode: 'light',
-        primary: { main: '#CAD83B', contrastText: '#2C2C2C' },
-        secondary: { main: '#FD9A34', contrastText: '#2C2C2C' },
-        info: { main: '#A88AEE', contrastText: '#ffffff' },
+        primary: { main: '#CAD83B' },
+        secondary: { main: '#FD9A34' },
+        info: { main: '#A88AEE' },
         background: { default: '#F8F8FA', paper: '#F8F8FA' },
         text: { primary: '#2C2C2C', secondary: '#4A4A4A' },
         common: { black: '#2C2C2C', white: '#ffffff' }

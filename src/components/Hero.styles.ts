@@ -84,7 +84,7 @@ export const useStyles = makeStyles()((theme) => ({
     },
     ctaButton: {
         backgroundColor: theme.palette.primary.main, // Purple
-        color: theme.palette.primary.contrastText,
+        color: theme.palette.common.white,
         padding: '16px 36px',
         borderRadius: '9999px',
         fontSize: '1rem',
