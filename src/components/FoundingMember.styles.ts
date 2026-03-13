@@ -5,7 +5,7 @@ export const useStyles = makeStyles()((theme) => ({
         position: 'relative',
         paddingTop: theme.spacing(10), // py-20
         paddingBottom: theme.spacing(10),
-        backgroundColor: '#FDF2EC', // Changed to match site base
+        backgroundColor: '#F8F8FA', // Changed to match site base
         color: theme.palette.text.primary,
         overflow: 'hidden',
         [theme.breakpoints.up('md')]: {

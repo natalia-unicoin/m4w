@@ -85,10 +85,10 @@ const MasterclassModal = () => {
                                 sx={{
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '12px',
-                                        '&:hover fieldset': { borderColor: '#6E61E7' },
-                                        '&.Mui-focused fieldset': { borderColor: '#6E61E7' }
+                                        '&:hover fieldset': { borderColor: '#2A2671' },
+                                        '&.Mui-focused fieldset': { borderColor: '#2A2671' }
                                     },
-                                    '& .MuiInputLabel-root.Mui-focused': { color: '#6E61E7' }
+                                    '& .MuiInputLabel-root.Mui-focused': { color: '#2A2671' }
                                 }}
                             />
                             <TextField
@@ -102,10 +102,10 @@ const MasterclassModal = () => {
                                 sx={{
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '12px',
-                                        '&:hover fieldset': { borderColor: '#6E61E7' },
-                                        '&.Mui-focused fieldset': { borderColor: '#6E61E7' }
+                                        '&:hover fieldset': { borderColor: '#2A2671' },
+                                        '&.Mui-focused fieldset': { borderColor: '#2A2671' }
                                     },
-                                    '& .MuiInputLabel-root.Mui-focused': { color: '#6E61E7' }
+                                    '& .MuiInputLabel-root.Mui-focused': { color: '#2A2671' }
                                 }}
                             />
                             <TextField
@@ -120,10 +120,10 @@ const MasterclassModal = () => {
                                 sx={{
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '12px',
-                                        '&:hover fieldset': { borderColor: '#6E61E7' },
-                                        '&.Mui-focused fieldset': { borderColor: '#6E61E7' }
+                                        '&:hover fieldset': { borderColor: '#2A2671' },
+                                        '&.Mui-focused fieldset': { borderColor: '#2A2671' }
                                     },
-                                    '& .MuiInputLabel-root.Mui-focused': { color: '#6E61E7' }
+                                    '& .MuiInputLabel-root.Mui-focused': { color: '#2A2671' }
                                 }}
                             />
 
@@ -133,7 +133,7 @@ const MasterclassModal = () => {
                                 fullWidth
                                 sx={{
                                     marginTop: '12px',
-                                    backgroundColor: '#6E61E7',
+                                    backgroundColor: '#2A2671',
                                     color: '#fff',
                                     padding: '16px',
                                     borderRadius: '9999px',

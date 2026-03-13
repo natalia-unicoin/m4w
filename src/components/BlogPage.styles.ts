@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles()((theme) => ({
     pageContainer: {
         minHeight: '100vh',
-        backgroundColor: '#FDF2EC',
+        backgroundColor: '#F8F8FA',
         color: theme.palette.common.black,
         paddingTop: theme.spacing(16), // pt-32
         paddingBottom: theme.spacing(10), // pb-20
@@ -274,7 +274,7 @@ export const useStyles = makeStyles()((theme) => ({
         width: '100%',
         padding: '16px 24px', // px-6 py-4
         borderRadius: '9999px',
-        backgroundColor: '#FDF2EC',
+        backgroundColor: '#F8F8FA',
         border: `1px solid ${theme.palette.grey[200]}`,
         outline: 'none',
         transition: 'all 0.2s',

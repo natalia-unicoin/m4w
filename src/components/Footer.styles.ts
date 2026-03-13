@@ -2,7 +2,7 @@ import { makeStyles } from 'tss-react/mui';
 
 export const useStyles = makeStyles()((theme) => ({
     footer: {
-        backgroundColor: '#FDF2EC',
+        backgroundColor: '#F8F8FA',
         color: theme.palette.common.black,
         paddingTop: theme.spacing(10), // py-20 (approx 80px)
         paddingBottom: theme.spacing(10),

@@ -13,7 +13,7 @@ const FoundingOfferSection = () => {
         {
             title: "The Program",
             icon: "📚",
-            color: "#6E61E7", // Purple
+            color: "#2A2671", // Purple
             items: [
                 "6-Week Financial Capability sprint.",
                 "Direct access to the core team.",

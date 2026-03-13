@@ -35,8 +35,8 @@ const theme = createTheme({
             main: '#B79DEC', // Soft Lavender
         },
         background: {
-            default: '#FDF2EC', // Peach/Off-white background
-            paper: '#FDF2EC',
+            default: '#F8F8FA', // Peach/Off-white background
+            paper: '#F8F8FA',
         },
         text: {
             primary: '#2A2671', // Deep Navy/Indigo text
@@ -92,8 +92,9 @@ const theme = createTheme({
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    backgroundColor: '#FDF2EC',
+                    backgroundColor: '#F8F8FA',
                     color: '#2A2671',
+                    textWrap: 'balance', // Globably fix widows
                 },
             },
         },

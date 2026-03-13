@@ -20,7 +20,7 @@ export const useStyles = makeStyles()((theme) => ({
         position: 'absolute',
         inset: 0,
         zIndex: 0,
-        backgroundColor: theme.palette.text.primary, // Dark Indigo / Violeta oscuro
+        backgroundColor: theme.palette.info.main, // Soft Lavender
     },
     content: {
         position: 'relative',
@@ -39,7 +39,7 @@ export const useStyles = makeStyles()((theme) => ({
         fontWeight: 700, // bold
         marginBottom: theme.spacing(4),
         lineHeight: 1.1,
-        color: theme.palette.common.white,
+        color: theme.palette.text.primary,
         fontSize: '2.5rem',
         [theme.breakpoints.up('md')]: {
             fontSize: '3.5rem',
@@ -52,7 +52,7 @@ export const useStyles = makeStyles()((theme) => ({
         fontFamily: theme.typography.body1.fontFamily,
         fontSize: '1.25rem', // Increased from 1.125rem
         marginBottom: theme.spacing(6),
-        color: theme.palette.common.white,
+        color: theme.palette.text.primary,
         maxWidth: '48rem',
         marginLeft: 'auto',
         marginRight: 'auto',
@@ -63,7 +63,7 @@ export const useStyles = makeStyles()((theme) => ({
     },
     highlight: {
         fontFamily: theme.typography.subtitle1.fontFamily, // Caveat (Hand)
-        color: theme.palette.secondary.main, // Switched to Lime Green for better contrast
+        color: theme.palette.primary.main, // Switched to Primary Navy for better contrast
         fontSize: '3.5rem',
         [theme.breakpoints.up('md')]: {
             fontSize: '4.5rem',
@@ -100,18 +100,18 @@ export const useStyles = makeStyles()((theme) => ({
     },
     secondaryButton: {
         backgroundColor: 'transparent',
-        color: theme.palette.common.white, // White text
+        color: theme.palette.text.primary, // Dark text
         padding: '14px 34px',
         borderRadius: '9999px',
         fontSize: '1rem',
         fontWeight: 700,
         textTransform: 'uppercase',
-        border: `2px solid ${theme.palette.common.white}`, // White border
+        border: `2px solid ${theme.palette.text.primary}`, // Dark border
         cursor: 'pointer',
         transition: 'all 0.3s',
         '&:hover': {
-            backgroundColor: theme.palette.common.white,
-            color: theme.palette.text.primary, // Dark Indigo text on hover
+            backgroundColor: theme.palette.text.primary,
+            color: theme.palette.common.white, // White text on hover
             transform: 'scale(1.05)',
         },
     }

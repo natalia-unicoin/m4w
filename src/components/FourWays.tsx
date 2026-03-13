@@ -14,7 +14,7 @@ const FourWays = () => {
         {
             title: "Clarity",
             description: "You see your financial reality clearly, your income, priorities, and long-term direction.",
-            color: "#6E61E7", // M4W Primary Purple
+            color: "#2A2671", // M4W Primary Purple
         },
         {
             title: "Structure",
@@ -134,7 +134,7 @@ const FourWays = () => {
                             className={classes.indicatorDot}
                             style={{
                                 width: activeIndex === index ? '32px' : '8px',
-                                backgroundColor: activeIndex === index ? '#6E61E7' : '#e0e0e0'
+                                backgroundColor: activeIndex === index ? '#2A2671' : '#e0e0e0'
                             }}
                         />
                     ))}
