@@ -86,7 +86,7 @@ export const altTheme = createTheme({
             styleOverrides: {
                 body: {
                     backgroundColor: '#F8F8FA',
-                    color: '#1A1A1A',
+                    color: '#2C2C2C',
                     textWrap: 'balance',
                 },
             },
@@ -101,12 +101,12 @@ export const altTheme = createTheme({
                 },
                 containedPrimary: {
                     backgroundColor: '#CAD83B',
-                    color: '#1A1A1A',
+                    color: '#ffffff',
                     '&:hover': { backgroundColor: '#B8C535' },
                 },
                 containedSecondary: {
                     backgroundColor: '#FD9A34',
-                    color: '#1A1A1A',
+                    color: '#ffffff',
                     '&:hover': { backgroundColor: '#E48A2E' },
                 },
             },
@@ -118,8 +118,8 @@ export const altTheme = createTheme({
         secondary: { main: '#FD9A34' },
         info: { main: '#A88AEE' },
         background: { default: '#F8F8FA', paper: '#F8F8FA' },
-        text: { primary: '#1A1A1A', secondary: '#4A4A4A' },
-        common: { black: '#1A1A1A', white: '#ffffff' }
+        text: { primary: '#2C2C2C', secondary: '#4A4A4A' },
+        common: { black: '#2C2C2C', white: '#ffffff' }
     },
 });
 

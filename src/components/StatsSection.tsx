@@ -43,7 +43,7 @@ const CommunitySection = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={classes.button}
-                            style={isPastel ? { backgroundColor: '#A88AEE', color: '#2C2C2C' } : undefined}
+                            style={isPastel ? { backgroundColor: '#A88AEE', color: '#ffffff' } : undefined}
                         >
                             Apply to the Community
                         </motion.button>
