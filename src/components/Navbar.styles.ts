@@ -48,7 +48,7 @@ export const useStyles = makeStyles()((theme) => ({
     },
     joinButton: {
         backgroundColor: theme.palette.primary.main, // Primary Purple
-        color: theme.palette.common.white,
+        color: theme.palette.common.black,
         padding: '8px 20px', // px-5 py-2
         borderRadius: '9999px',
         fontSize: '0.75rem', // text-xs
