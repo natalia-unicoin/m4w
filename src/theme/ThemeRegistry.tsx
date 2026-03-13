@@ -7,9 +7,23 @@ import NextAppDirEmotionCacheProvider from './EmotionCache';
 import { mainTheme, altTheme } from './theme';
 import { CustomThemeProvider, useThemeContext } from './ThemeContext';
 
+import { usePathname } from 'next/navigation';
+
 function ThemeConsumer({ children }: { children: React.ReactNode }) {
-    const { mode } = useThemeContext();
-    const currentTheme = mode === 'alt' ? altTheme : mainTheme;
+    const { mode, setThemeMode } = useThemeContext();
+    const pathname = usePathname();
+
+    const isPastelPath = pathname === '/pastel';
+    const currentTheme = isPastelPath ? altTheme : (mode === 'alt' ? altTheme : mainTheme);
+
+    // Sync context state if navigated directly
+    React.useEffect(() => {
+        if (isPastelPath && mode !== 'alt') {
+            setThemeMode('alt');
+        } else if (pathname === '/' && mode !== 'main') {
+            setThemeMode('main');
+        }
+    }, [pathname, isPastelPath, mode, setThemeMode]);
 
     return (
         <ThemeProvider theme={currentTheme}>
