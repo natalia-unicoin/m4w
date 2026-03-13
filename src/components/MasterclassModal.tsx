@@ -148,7 +148,7 @@ const MasterclassModal = () => {
                                     }
                                 }}
                             >
-                                Registrate
+                                REGISTER
                             </Button>
                         </form>
                     </motion.div>

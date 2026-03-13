@@ -4,17 +4,26 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { useModal } from '@/context/ModalContext';
+import { getImagePath } from '@/utils/image';
 import { useStyles } from './Hero.styles';
 
 const Hero = () => {
     const { classes } = useStyles();
-    const { openJoinModal } = useModal();
+    const { openJoinModal, openMasterclass } = useModal();
     const pathname = usePathname();
     const isPastel = pathname === '/alternate';
     return (
         <section className={classes.section}>
             {/* Background Image */}
-            <div className={classes.bgWrapper} />
+            <div
+                className={classes.bgWrapper}
+                style={isPastel ? {
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('${getImagePath('images/alternate-hero-bg.jpg')}')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundColor: 'transparent'
+                } : undefined}
+            />
 
             {/* Content */}
             <div className={classes.content}>
@@ -52,6 +61,7 @@ const Hero = () => {
                         Join <strong>Money4Women</strong>
                     </button>
                     <button
+                        onClick={openMasterclass}
                         className={classes.secondaryButton}
                         style={isPastel ? { borderColor: '#ffffff', color: '#ffffff' } : undefined}
                     >
