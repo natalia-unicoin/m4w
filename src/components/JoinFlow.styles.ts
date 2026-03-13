@@ -5,7 +5,7 @@ export const useStyles = makeStyles()((theme) => ({
         position: 'relative',
         minHeight: '100vh',
         display: 'flex',
-        alignItems: 'flex-end',
+        alignItems: 'center',
         justifyContent: 'center',
         overflow: 'hidden',
         backgroundColor: theme.palette.text.primary, // Dark Indigo
