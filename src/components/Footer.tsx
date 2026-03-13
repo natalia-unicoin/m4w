@@ -11,7 +11,7 @@ const Footer = () => {
     const pathname = usePathname();
     const isPastel = pathname === '/alternate';
     const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png';
-    const footerLogoStyle = isPastel ? { maxWidth: '150px', height: 'auto' } : undefined;
+    const footerLogoStyle = isPastel ? { maxWidth: '100px', height: 'auto' } : undefined;
     const platformItems = ["Home", "Founding Member", "How It Works"];
     const communityItems = ["Community", "Apply", "Events"];
     const legalItems = ["Privacy Policy", "Terms of Service", "Cookie Policy"];

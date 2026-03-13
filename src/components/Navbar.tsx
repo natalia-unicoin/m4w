@@ -19,8 +19,8 @@ const Navbar = () => {
     const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png'; // Added
 
     // Conditional styling to fix the massive size of the alternate logo
-    const logoStyle = isPastel ? { maxHeight: '20px', width: 'auto' } : { maxHeight: '32px', width: 'auto' };
-    const mobileMenuLogoStyle = isPastel ? { maxWidth: '130px' } : { maxWidth: '160px' };
+    const logoStyle = isPastel ? { maxHeight: '14px', width: 'auto' } : { maxHeight: '32px', width: 'auto' };
+    const mobileMenuLogoStyle = isPastel ? { maxWidth: '100px' } : { maxWidth: '160px' };
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         const previous = scrollY.getPrevious();
