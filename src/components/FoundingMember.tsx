@@ -18,7 +18,7 @@ const FoundingMember = () => {
                     <div className={classes.imageColumn}>
                         <div className={classes.imageWrapper}>
                             <img
-                                src={getImagePath("assets/founding-member-phone.jpg")}
+                                src={getImagePath("images/founding-member.jpg")}
                                 alt="Founding Member App Experience"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
                             />
