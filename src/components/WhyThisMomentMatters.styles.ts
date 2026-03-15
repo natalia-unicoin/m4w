@@ -2,15 +2,17 @@ import { makeStyles } from 'tss-react/mui';
 
 export const useStyles = makeStyles()((theme) => ({
     section: {
-        paddingTop: theme.spacing(10), // py-20
-        paddingBottom: theme.spacing(10),
-        backgroundColor: '#F1F1F1', // Off-white to distinguish from previous section
-        color: theme.palette.text.primary,
+        paddingTop: theme.spacing(16),
+        paddingBottom: theme.spacing(16),
+        backgroundColor: '#111111', // Deep dark modern background
+        backgroundImage: 'radial-gradient(circle at top right, rgba(42, 38, 113, 0.4), transparent 50%), radial-gradient(circle at bottom left, rgba(183, 157, 236, 0.1), transparent 50%)',
+        color: theme.palette.common.white,
         overflow: 'hidden',
-        borderTop: `1px solid ${theme.palette.grey[200]}`,
+        position: 'relative',
+        borderTop: '1px solid rgba(255,255,255,0.05)',
         [theme.breakpoints.up('md')]: {
-            paddingTop: theme.spacing(16), // py-32
-            paddingBottom: theme.spacing(16),
+            paddingTop: theme.spacing(24),
+            paddingBottom: theme.spacing(24),
         }
     },
     container: {
@@ -19,6 +21,8 @@ export const useStyles = makeStyles()((theme) => ({
         marginRight: 'auto',
         paddingLeft: theme.spacing(2),
         paddingRight: theme.spacing(2),
+        position: 'relative',
+        zIndex: 2,
         [theme.breakpoints.up('md')]: {
             paddingLeft: theme.spacing(4),
             paddingRight: theme.spacing(4),
@@ -29,7 +33,7 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     textWrapper: {
-        maxWidth: '800px',
+        maxWidth: '900px',
         marginLeft: 'auto',
         marginRight: 'auto',
         display: 'flex',
@@ -37,17 +41,31 @@ export const useStyles = makeStyles()((theme) => ({
         alignItems: 'center',
         textAlign: 'center',
     },
+    overTitle: {
+        fontFamily: theme.typography.subtitle1.fontFamily, // Caveat or similar cursive for elegance
+        color: theme.palette.info.main, // Light purple
+        fontSize: '2rem',
+        marginBottom: theme.spacing(2),
+        [theme.breakpoints.up('md')]: {
+            fontSize: '3rem',
+        }
+    },
     title: {
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700,
-        marginBottom: theme.spacing(6),
-        fontSize: '2.5rem',
+        marginBottom: theme.spacing(8),
+        fontSize: '3.5rem',
         lineHeight: 1.1,
+        letterSpacing: '-0.02em',
+        background: 'linear-gradient(135deg, #ffffff 0%, #B79DEC 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
         [theme.breakpoints.up('md')]: {
-            fontSize: '3.5rem',
+            fontSize: '5rem',
         },
         [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem',
+            fontSize: '6.5rem',
+            lineHeight: 1,
         }
     },
     textContent: {
@@ -55,21 +73,39 @@ export const useStyles = makeStyles()((theme) => ({
         flexDirection: 'column',
     },
     leadText: {
-        fontSize: '1.25rem', // text-xl
-        color: theme.palette.text.primary,
-        lineHeight: 1.625, // leading-relaxed
-        marginBottom: theme.spacing(4),
+        fontSize: '1.25rem',
+        color: theme.palette.common.white,
+        lineHeight: 1.8,
+        fontWeight: 400,
+        marginBottom: theme.spacing(6),
+        maxWidth: '900px',
+        margin: '0 auto',
+        opacity: 0.9,
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem', // text-2xl
+            fontSize: '1.75rem',
+        }
+    },
+    middleText: {
+        fontSize: '1.125rem',
+        fontWeight: 700,
+        lineHeight: 1.8,
+        color: theme.palette.info.main,
+        marginBottom: theme.spacing(6),
+        maxWidth: '800px',
+        margin: '0 auto',
+        [theme.breakpoints.up('md')]: {
+            fontSize: '1.375rem',
         }
     },
     description: {
-        fontSize: '1rem', // text-base
+        fontSize: '1rem',
         fontWeight: 400,
-        lineHeight: 1.625, // leading-relaxed
-        color: theme.palette.text.primary,
+        lineHeight: 1.8,
+        color: 'rgba(255, 255, 255, 0.7)',
+        maxWidth: '800px',
+        margin: '0 auto',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.125rem', // text-lg
+            fontSize: '1.125rem',
         }
     }
 }));

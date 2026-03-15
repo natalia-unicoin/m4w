@@ -12,57 +12,46 @@ const SystemSection = () => {
     return (
         <section id="system" className={classes.section}>
             <div className={classes.container}>
-                <div className={classes.textWrapper}>
-                    <motion.p
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                <div className={classes.bentoGrid}>
+                    {/* Text Block */}
+                    <motion.div
+                        className={`${classes.bentoBlock} ${classes.bentoBlockText}`}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className={classes.overTitle}
                     >
-                        FROM INCOME TO WEALTH
-                    </motion.p>
-                    <motion.h2
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
-                        className={classes.title}
-                    >
-                        The Wealth Operating System for High-Performing Women
-                    </motion.h2>
+                        <span className={classes.bentoPill}>FROM INCOME TO WEALTH</span>
+                        <h2 className={classes.bentoTitle}>
+                            The Wealth Operating System for High{'\u2011'}Performing Women
+                        </h2>
+                        <p className={classes.bentoDescription}>
+                            Inside the program, you develop a clear view of your finances, install systems that support long-term growth, and learn disciplined investment frameworks across traditional and digital assets.
+                            <br /><br />
+                            The goal is simple: help you transform financial success into lasting financial strength.
+                        </p>
+                        <button onClick={openMasterclass} className={classes.bentoButton}>
+                            Register for the Masterclass
+                        </button>
+                    </motion.div>
 
-                    <motion.p
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                    {/* Top Right Placeholder */}
+                    <motion.div
+                        className={`${classes.bentoBlock} ${classes.bentoImageTopRight}`}
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className={classes.leadText}
-                    >
-                        <strong>Money4Women</strong> introduces a structured approach to building wealth&nbsp;intentionally.
-                    </motion.p>
+                    />
 
-                    <motion.p
+                    {/* Bottom Right Placeholder */}
+                    <motion.div
+                        className={`${classes.bentoBlock} ${classes.bentoImageBottomRight}`}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.3 }}
-                        className={classes.description}
-                    >
-                        Inside the program, you develop a clear view of your finances, install systems that support long-term growth, and learn disciplined investment frameworks across traditional and digital&nbsp;assets.<br /><br />
-                        The goal is simple: help you transform financial success into lasting financial&nbsp;strength.
-                    </motion.p>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
-                    >
-                        <button onClick={openMasterclass} className={classes.ctaButton}>
-                            Register for the Masterclass
-                        </button>
-                    </motion.div>
+                    />
                 </div>
             </div>
         </section>

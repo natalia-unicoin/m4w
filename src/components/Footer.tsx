@@ -26,7 +26,7 @@ const Footer = () => {
                             <img src={getImagePath(logoSrc)} alt="Money4Women" className={classes.logo} style={footerLogoStyle} />
                         </div>
                         <p className={classes.description}>
-                            The Wealth Operating System for High-Performing Women.
+                            The Wealth Operating System for High{'\u2011'}Performing Women.
                         </p>
 
                         {/* Social Media Icons */}

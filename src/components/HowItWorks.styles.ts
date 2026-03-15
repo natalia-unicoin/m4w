@@ -250,5 +250,114 @@ export const useStyles = makeStyles()((theme) => ({
     },
     indicatorDot: {
         display: 'none',
+    },
+    // New Grid Layout Styles
+    bentoGrid: {
+        display: 'grid',
+        gridTemplateColumns: 'minmax(0, 1fr)',
+        gap: theme.spacing(3),
+        marginTop: theme.spacing(6),
+        [theme.breakpoints.up('lg')]: {
+            gridTemplateColumns: '1fr 1fr', // 2 equal columns instead of 3
+            gridTemplateRows: 'repeat(2, 320px)',
+        }
+    },
+    bentoBlock: {
+        borderRadius: '1.5rem', // Consistent border radius for all blocks
+        overflow: 'hidden',
+        position: 'relative',
+        display: 'flex',
+        flexDirection: 'column',
+        boxShadow: theme.shadows[4],
+    },
+    bentoBlockText: {
+        gridColumn: 'span 1',
+        backgroundColor: theme.palette.primary.main, // Dark Indigo / Purple
+        color: theme.palette.common.white,
+        padding: theme.spacing(5),
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        borderRadius: '1.5rem', // Force radius here as well
+        boxShadow: theme.shadows[4],
+        [theme.breakpoints.up('lg')]: {
+            gridRow: 'span 2',
+        }
+    },
+    bentoPill: {
+        backgroundColor: theme.palette.common.white,
+        color: '#111111',
+        borderRadius: '9999px',
+        padding: '4px 12px',
+        fontSize: '0.75rem',
+        fontWeight: 700,
+        textTransform: 'uppercase',
+        marginBottom: theme.spacing(4),
+        display: 'inline-block',
+    },
+    bentoTitle: {
+        fontSize: '2rem',
+        fontFamily: theme.typography.h2.fontFamily,
+        fontWeight: 700,
+        lineHeight: 1.2,
+        marginBottom: theme.spacing(3),
+        [theme.breakpoints.up('md')]: {
+            fontSize: '2.5rem',
+        }
+    },
+    bentoDescription: {
+        fontSize: '1rem',
+        color: 'rgba(255, 255, 255, 0.8)', // Lighter text on dark background
+        lineHeight: 1.6,
+        marginBottom: theme.spacing(4),
+    },
+    bentoButton: {
+        backgroundColor: theme.palette.secondary.main, // Lime Green
+        color: theme.palette.primary.main, // Dark Indigo
+        padding: '16px 36px',
+        borderRadius: '9999px',
+        fontWeight: 700,
+        textTransform: 'uppercase', // Match other uppercase CTA buttons
+        fontSize: '1rem',
+        border: 'none',
+        cursor: 'pointer',
+        transition: 'all 0.3s',
+        marginTop: 'auto',
+        '&:hover': {
+            backgroundColor: theme.palette.common.white,
+            color: theme.palette.primary.main,
+            transform: 'scale(1.05)',
+        }
+    },
+    bentoImageTopRight: {
+        gridColumn: 'span 1',
+        backgroundColor: theme.palette.secondary.main, // Lime Green
+        minHeight: '300px',
+        borderRadius: '1.5rem',
+        [theme.breakpoints.up('lg')]: {
+            gridRow: 'span 1',
+            minHeight: 'auto',
+        }
+    },
+    bentoImageBottomRight: {
+        gridColumn: 'span 1',
+        backgroundColor: theme.palette.text.secondary, // Medium Purple/Indigo
+        minHeight: '300px',
+        padding: theme.spacing(4),
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        color: theme.palette.common.white,
+        [theme.breakpoints.up('lg')]: {
+            gridRow: 'span 1',
+            minHeight: 'auto',
+        }
+    },
+    bentoOverlayTitle: {
+        fontSize: '1.5rem',
+        fontFamily: theme.typography.h3.fontFamily,
+        fontWeight: 600,
+        marginTop: theme.spacing(2),
     }
 }));

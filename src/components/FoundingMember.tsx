@@ -40,7 +40,7 @@ const FoundingMember = () => {
                                 Join the first cohort of leaders building wealth with clarity, discipline, and long-term strategy.
                             </p>
                             <p className={classes.description}>
-                                <span className={classes.bold}>Money4Women</span> is designed for high-performing professionals who want to move from earning well to building wealth intentionally.<br /><br />
+                                <span className={classes.bold}>Money4Women</span> is designed for high{'\u2011'}performing professionals who want to move from earning well to building wealth intentionally.<br /><br />
                                 As a founding member, you gain early access to the program, connect with a global community of ambitious women, and help shape the future of the movement.
                             </p>
 
