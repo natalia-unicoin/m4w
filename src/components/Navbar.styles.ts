@@ -11,8 +11,8 @@ export const useStyles = makeStyles()((theme) => ({
         borderBottom: `1px solid ${theme.palette.grey[100]}`,
     },
     container: {
-        paddingLeft: theme.spacing(3), // px-6
-        paddingRight: theme.spacing(3),
+        paddingLeft: theme.spacing(2), // Reduced for inner space on small screens
+        paddingRight: theme.spacing(2),
         paddingTop: theme.spacing(1), // py-2 (was 1.5/3)
         paddingBottom: theme.spacing(1),
         display: 'flex',
@@ -29,7 +29,7 @@ export const useStyles = makeStyles()((theme) => ({
     },
     logoLink: {
         display: 'block',
-        width: '128px', // w-32
+        width: '100px', // Made logo smaller on mobile to clear button
         [theme.breakpoints.up('md')]: {
             width: '192px', // w-48
         },
@@ -41,7 +41,7 @@ export const useStyles = makeStyles()((theme) => ({
     controls: {
         display: 'flex',
         alignItems: 'center',
-        gap: theme.spacing(2),
+        gap: theme.spacing(1), // Tightened gap on mobile
         [theme.breakpoints.up('md')]: {
             gap: theme.spacing(4),
         },
@@ -49,9 +49,9 @@ export const useStyles = makeStyles()((theme) => ({
     joinButton: {
         backgroundColor: theme.palette.primary.main, // Primary Purple
         color: theme.palette.common.white,
-        padding: '8px 20px', // px-5 py-2
+        padding: '6px 12px', // Tighter padding for mobile
         borderRadius: '9999px',
-        fontSize: '0.75rem', // text-xs
+        fontSize: '0.65rem', // Slightly smaller text on mobile to avoid overlap
         fontWeight: 700,
         letterSpacing: '0.1em', // tracking-widest
         textTransform: 'uppercase',
