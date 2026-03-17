@@ -54,29 +54,6 @@ const Hero = () => {
                 </motion.div>
             </div>
 
-            {/* Bottom Scroll Indicator (Mouse shape with moving wheel) */}
-            <motion.div
-                className={classes.scrollIndicatorContainer}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
-            >
-                <div className={classes.scrollMouse}>
-                    <motion.div
-                        className={classes.scrollWheel}
-                        animate={{
-                            y: [0, 15, 0],
-                            opacity: [1, 0, 1]
-                        }}
-                        transition={{
-                            duration: 2,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }}
-                    />
-                </div>
-            </motion.div>
-
             {/* Side Scroll Tracker (Right side line) */}
             <div className={classes.sideTracker}>
                 <motion.div

@@ -41,12 +41,12 @@ export const useStyles = makeStyles()((theme) => ({
         marginBottom: theme.spacing(4),
         lineHeight: 1.1,
         color: theme.palette.text.primary,
-        fontSize: '2.5rem',
+        fontSize: '3.5rem',
         [theme.breakpoints.up('md')]: {
-            fontSize: '3.5rem',
+            fontSize: '5rem',
         },
         [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem',
+            fontSize: '6.5rem',
         }
     },
     subtitle: {
@@ -65,12 +65,12 @@ export const useStyles = makeStyles()((theme) => ({
     highlight: {
         fontFamily: theme.typography.subtitle1.fontFamily, // Caveat (Hand)
         color: theme.palette.primary.main, // Switched to Primary Navy for better contrast
-        fontSize: '3.5rem',
+        fontSize: '4.5rem',
         [theme.breakpoints.up('md')]: {
-            fontSize: '4.5rem',
+            fontSize: '6.5rem',
         },
         [theme.breakpoints.up('lg')]: {
-            fontSize: '5.5rem',
+            fontSize: '8.5rem',
         }
     },
     ctaContainer: {
