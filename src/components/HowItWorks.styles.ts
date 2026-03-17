@@ -259,7 +259,7 @@ export const useStyles = makeStyles()((theme) => ({
         marginTop: theme.spacing(6),
         [theme.breakpoints.up('lg')]: {
             gridTemplateColumns: '1.5fr 1fr', // Much wider text column
-            gridTemplateRows: 'repeat(2, 340px)', // Slightly taller rows to fit content
+            gridTemplateRows: 'repeat(2, auto)', // Let rows grow based on content
         }
     },
     bentoBlock: {
