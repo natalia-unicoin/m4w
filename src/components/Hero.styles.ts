@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles()((theme) => ({
     section: {
         position: 'relative',
-        minHeight: '100vh', // Standard viewport height
+        minHeight: '120vh', // Stretch container taller
         width: '100%',
         display: 'flex',
         alignItems: 'flex-end', // Push content to bottom
@@ -13,6 +13,7 @@ export const useStyles = makeStyles()((theme) => ({
         color: theme.palette.text.primary,
         paddingBottom: 0, // Removed padding to let it hit the bottom edge
         [theme.breakpoints.up('md')]: {
+            minHeight: '130vh', // Even taller on desktop to ensure face is clear
             paddingBottom: 0,
         }
     },
