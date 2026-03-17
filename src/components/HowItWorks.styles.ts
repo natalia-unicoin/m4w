@@ -164,7 +164,7 @@ export const useStyles = makeStyles()((theme) => ({
         backfaceVisibility: 'hidden', // backface-hidden
         borderRadius: '1.5rem', // rounded-3xl
         overflow: 'hidden',
-        boxShadow: theme.shadows[4], // shadow-lg
+        boxShadow: 'none', // shadow-lg removed per user request
         backgroundColor: theme.palette.background.default,
     },
     cardImagePlaceholder: {
@@ -268,7 +268,7 @@ export const useStyles = makeStyles()((theme) => ({
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
-        boxShadow: theme.shadows[4],
+        boxShadow: 'none',
     },
     bentoBlockText: {
         gridColumn: 'span 1',
@@ -280,7 +280,7 @@ export const useStyles = makeStyles()((theme) => ({
         justifyContent: 'center',
         alignItems: 'flex-start',
         borderRadius: '1.5rem', // Force radius here as well
-        boxShadow: theme.shadows[4],
+        boxShadow: 'none',
         [theme.breakpoints.up('lg')]: {
             gridRow: 'span 2',
         }

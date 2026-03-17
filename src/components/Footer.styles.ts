@@ -111,7 +111,7 @@ export const useStyles = makeStyles()((theme) => ({
         paddingTop: theme.spacing(6),
         paddingBottom: theme.spacing(6), // Added space below disclaimer
         borderTop: `1px solid ${theme.palette.grey[100]}`,
-        textAlign: 'left',
+        textAlign: 'center',
         color: theme.palette.text.primary, // Using primary color for better contrast
     },
     disclaimerTitle: {
