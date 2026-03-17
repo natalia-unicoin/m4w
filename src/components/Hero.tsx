@@ -16,7 +16,10 @@ const Hero = () => {
     return (
         <section className={classes.section}>
             {/* Background Image */}
-            <div className={classes.bgWrapper} />
+            <div
+                className={classes.bgWrapper}
+                style={{ backgroundImage: `url('${getImagePath('images/hero.png')}')` }}
+            />
 
             {/* Content */}
             <div className={classes.content}>

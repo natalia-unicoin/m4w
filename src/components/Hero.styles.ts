@@ -21,7 +21,9 @@ export const useStyles = makeStyles()((theme) => ({
         position: 'absolute',
         inset: 0,
         zIndex: 0,
-        backgroundColor: theme.palette.info.main, // Soft Lavender
+        backgroundColor: theme.palette.info.main, // Fallback color
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
     },
     content: {
         position: 'relative',
