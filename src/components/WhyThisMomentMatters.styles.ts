@@ -57,9 +57,6 @@ export const useStyles = makeStyles()((theme) => ({
         fontSize: '3.5rem',
         lineHeight: 1.1,
         letterSpacing: '-0.02em',
-        background: 'linear-gradient(135deg, #ffffff 0%, #B79DEC 100%)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
         [theme.breakpoints.up('md')]: {
             fontSize: '5rem',
         },
