@@ -51,12 +51,6 @@ const Hero = () => {
                     >
                         Join <strong>Money4Women</strong>
                     </button>
-                    <button
-                        onClick={openMasterclass}
-                        className={classes.secondaryButton}
-                    >
-                        Register for the Masterclass
-                    </button>
                 </motion.div>
             </div>
 

@@ -290,10 +290,10 @@ export const useStyles = makeStyles()((theme) => ({
         backgroundColor: theme.palette.common.white,
         color: '#111111',
         borderRadius: '9999px',
-        padding: '8px 24px', // Larger padding to match the pill style
+        padding: '6px 20px', // Tighter top/bottom padding
         fontSize: '0.875rem',
         fontWeight: 600, // SemiBold instead of 700 (Bold)
-        letterSpacing: '0.05em',
+        letterSpacing: 'normal',
         textTransform: 'uppercase',
         marginBottom: theme.spacing(4),
         display: 'inline-block',
