@@ -115,7 +115,7 @@ export const useStyles = makeStyles()((theme) => ({
         color: theme.palette.text.primary, // Using primary color for better contrast
     },
     disclaimerTitle: {
-        fontSize: '0.875rem', // text-sm
+        fontSize: '1rem', // Increased from 0.875rem
         fontWeight: 700,
         textTransform: 'uppercase',
         letterSpacing: '0.05em',
@@ -123,7 +123,7 @@ export const useStyles = makeStyles()((theme) => ({
         color: theme.palette.text.primary,
     },
     disclaimerText: {
-        fontSize: '0.75rem', // text-xs
+        fontSize: '0.875rem', // Increased from 0.75rem
         lineHeight: 1.6,
         color: theme.palette.text.primary, // Ensure strong contrast
         marginBottom: theme.spacing(2),
