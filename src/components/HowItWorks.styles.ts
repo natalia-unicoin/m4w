@@ -258,8 +258,8 @@ export const useStyles = makeStyles()((theme) => ({
         gap: theme.spacing(3),
         marginTop: theme.spacing(6),
         [theme.breakpoints.up('lg')]: {
-            gridTemplateColumns: '1fr 1fr', // 2 equal columns instead of 3
-            gridTemplateRows: 'repeat(2, 320px)',
+            gridTemplateColumns: '1.3fr 1fr', // Wider text column
+            gridTemplateRows: 'repeat(2, 340px)', // Slightly taller rows to fit content
         }
     },
     bentoBlock: {
@@ -283,6 +283,7 @@ export const useStyles = makeStyles()((theme) => ({
         boxShadow: 'none',
         [theme.breakpoints.up('lg')]: {
             gridRow: 'span 2',
+            padding: theme.spacing(6, 8), // More side padding on desktop
         }
     },
     bentoPill: {
@@ -300,7 +301,7 @@ export const useStyles = makeStyles()((theme) => ({
         fontFamily: theme.typography.h2.fontFamily,
         fontWeight: 700,
         lineHeight: 1.1,
-        marginBottom: theme.spacing(4),
+        marginBottom: theme.spacing(3), // Tighter margin
         [theme.breakpoints.up('md')]: {
             fontSize: '3.5rem',
         }
@@ -310,7 +311,7 @@ export const useStyles = makeStyles()((theme) => ({
         color: 'rgba(255, 255, 255, 0.9)', // Lighter text on dark background
         lineHeight: 1.7,
         letterSpacing: '0.01em',
-        marginBottom: theme.spacing(5),
+        marginBottom: theme.spacing(4), // Tighter margin
     },
     bentoButton: {
         backgroundColor: theme.palette.secondary.main, // Lime Green
