@@ -52,7 +52,13 @@ const Hero = () => {
                         onClick={openJoinModal}
                         className={classes.ctaButton}
                     >
-                        Join <strong>Money4Women</strong>
+                        JOIN MONEY4WOMEN
+                    </button>
+                    <button
+                        onClick={openMasterclass}
+                        className={classes.outlineButton}
+                    >
+                        REGISTER FOR THE MASTERCLASS
                     </button>
                 </motion.div>
             </div>

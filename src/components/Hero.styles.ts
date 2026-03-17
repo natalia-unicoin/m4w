@@ -42,7 +42,7 @@ export const useStyles = makeStyles()((theme) => ({
         fontWeight: 700, // bold
         marginBottom: theme.spacing(1), // Extremely tight margin between title and subtitle
         lineHeight: 0.95, // Even tighter line-height
-        color: theme.palette.text.primary,
+        color: theme.palette.common.white,
         fontSize: '3rem',
         [theme.breakpoints.up('md')]: {
             fontSize: '4.25rem',
@@ -53,20 +53,20 @@ export const useStyles = makeStyles()((theme) => ({
     },
     subtitle: {
         fontFamily: theme.typography.body1.fontFamily,
-        fontSize: '1.25rem', // Increased from 1.125rem
+        fontSize: '1rem', // Softer size to match the screenshot
         marginBottom: theme.spacing(6),
-        color: theme.palette.text.primary,
-        maxWidth: '48rem',
+        color: 'rgba(255, 255, 255, 0.85)', // Slight transparency for the subtitle
+        maxWidth: '42rem',
         marginLeft: 'auto',
         marginRight: 'auto',
         lineHeight: 1.6,
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem', // Increased from 1.25rem
+            fontSize: '1.125rem', // Slightly larger on tablet
         }
     },
     highlight: {
         fontFamily: theme.typography.subtitle1.fontFamily, // Caveat (Hand)
-        color: theme.palette.primary.main, // Switched to Primary Navy for better contrast
+        color: theme.palette.common.white, // Changed to white
         fontSize: '4rem',
         [theme.breakpoints.up('md')]: {
             fontSize: '5.5rem',
@@ -88,17 +88,36 @@ export const useStyles = makeStyles()((theme) => ({
     ctaButton: {
         backgroundColor: theme.palette.primary.main, // Purple
         color: theme.palette.common.white,
-        padding: '16px 36px',
+        padding: '12px 32px', // Slightly slimmer padding to match reference
         borderRadius: '9999px',
-        fontSize: '1rem',
-        fontWeight: 700,
+        fontSize: '0.875rem', // Clean, small UI size
+        fontWeight: 600,
         textTransform: 'uppercase',
-        border: 'none',
+        letterSpacing: '0.05em',
+        border: '1px solid transparent',
         cursor: 'pointer',
         transition: 'all 0.3s',
         '&:hover': {
-            backgroundColor: theme.palette.text.primary, // Dark Indigo
-            transform: 'scale(1.05)',
+            backgroundColor: 'transparent',
+            color: theme.palette.common.white,
+            borderColor: theme.palette.common.white,
+        },
+    },
+    outlineButton: {
+        backgroundColor: 'transparent',
+        color: theme.palette.common.white,
+        padding: '12px 32px',
+        borderRadius: '9999px',
+        fontSize: '0.875rem',
+        fontWeight: 600,
+        textTransform: 'uppercase',
+        letterSpacing: '0.05em',
+        border: '1px solid rgba(255, 255, 255, 0.8)',
+        cursor: 'pointer',
+        transition: 'all 0.3s',
+        '&:hover': {
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            borderColor: theme.palette.common.white,
         },
     },
     scrollIndicatorContainer: {
