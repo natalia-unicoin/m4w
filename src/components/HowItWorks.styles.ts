@@ -287,13 +287,10 @@ export const useStyles = makeStyles()((theme) => ({
     },
     bentoPill: {
         fontFamily: theme.typography.body1.fontFamily, // Inter
-        backgroundColor: theme.palette.common.white,
-        color: '#111111',
-        borderRadius: '9999px',
-        padding: '6px 20px', // Tighter top/bottom padding
+        color: '#B79DEC', // Requested light purple color
         fontSize: '0.875rem',
         fontWeight: 600, // SemiBold instead of 700 (Bold)
-        letterSpacing: 'normal',
+        letterSpacing: '0.05em',
         textTransform: 'uppercase',
         marginBottom: theme.spacing(4),
         display: 'inline-block',
