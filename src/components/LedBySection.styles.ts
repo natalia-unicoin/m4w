@@ -7,7 +7,7 @@ export const useStyles = makeStyles()((theme) => ({
         paddingBottom: theme.spacing(10),
         backgroundColor: '#F8F8FA',
         backgroundImage: `
-            linear-gradient(rgba(248, 248, 250, 0.85), rgba(248, 248, 250, 0.85)),
+            linear-gradient(rgba(248, 248, 250, 0.55), rgba(248, 248, 250, 0.55)),
             url('/images/bg-square.jpg')
         `,
         backgroundSize: 'cover',
