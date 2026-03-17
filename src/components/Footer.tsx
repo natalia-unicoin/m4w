@@ -4,14 +4,10 @@ import React from 'react';
 import { getImagePath } from '@/utils/image';
 import { useStyles } from './Footer.styles';
 
-import { usePathname } from 'next/navigation';
-
 const Footer = () => {
     const { classes } = useStyles();
-    const pathname = usePathname();
-    const isPastel = pathname === '/alternate';
-    const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png';
-    const footerLogoStyle = isPastel ? { maxWidth: '100px', height: 'auto' } : undefined;
+    const logoSrc = 'images/logo-m4w-black.png'; // Black text logo user requested
+    const footerLogoStyle = { maxWidth: '140px', height: 'auto' };
     const platformItems = ["Home", "Founding Member", "How It Works"];
     const communityItems = ["Community", "Apply", "Events"];
     const legalItems = ["Privacy Policy", "Terms of Service", "Cookie Policy"];

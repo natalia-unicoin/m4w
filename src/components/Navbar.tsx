@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import Link from "next/link";
-import { usePathname } from 'next/navigation';
 import { getImagePath } from '@/utils/image';
 import { useModal } from '@/context/ModalContext';
 import { useStyles } from './Navbar.styles';
@@ -14,13 +13,11 @@ const Navbar = () => {
     const { scrollY } = useScroll();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hidden, setHidden] = useState(false);
-    const pathname = usePathname(); // Added
-    const isPastel = pathname === '/alternate'; // Added
-    const logoSrc = isPastel ? 'images/logo-pastel.png' : 'images/logo-main-1.png'; // Added
+    const logoSrc = 'images/logo-m4w-black.png'; // Black text logo user requested
 
     // Conditional styling to fix the massive size of the alternate logo
-    const logoStyle = isPastel ? { maxHeight: '14px', width: 'auto' } : { maxHeight: '32px', width: 'auto' };
-    const mobileMenuLogoStyle = isPastel ? { maxWidth: '100px' } : { maxWidth: '160px' };
+    const logoStyle = { maxHeight: '20px', width: 'auto' };
+    const mobileMenuLogoStyle = { maxWidth: '140px' };
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         const previous = scrollY.getPrevious();
