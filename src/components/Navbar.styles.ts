@@ -47,6 +47,7 @@ export const useStyles = makeStyles()((theme) => ({
         },
     },
     joinButton: {
+        display: 'none', // Hidden on mobile per user request
         backgroundColor: theme.palette.primary.main, // Primary Purple
         color: theme.palette.common.white,
         padding: '6px 12px', // Tighter padding for mobile
@@ -64,6 +65,7 @@ export const useStyles = makeStyles()((theme) => ({
             backgroundColor: theme.palette.text.primary, // Dark Indigo
         },
         [theme.breakpoints.up('md')]: {
+            display: 'block', // Visible on tablet and larger
             padding: '8px 24px', // px-6 py-2
             fontSize: '0.875rem', // text-sm
         },
