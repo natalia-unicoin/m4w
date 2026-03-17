@@ -6,7 +6,7 @@ import { useStyles } from './Footer.styles';
 
 const Footer = () => {
     const { classes } = useStyles();
-    const logoSrc = 'images/logo-m4w-black.png'; // Black text logo user requested
+    const logoSrc = 'images/logo-m4w-black.png'; // Black text logo for light footer
     const footerLogoStyle = { maxWidth: '140px', height: 'auto' };
     const platformItems = ["Home", "Founding Member", "How It Works"];
     const communityItems = ["Community", "Apply", "Events"];
