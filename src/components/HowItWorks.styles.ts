@@ -296,20 +296,21 @@ export const useStyles = makeStyles()((theme) => ({
         display: 'inline-block',
     },
     bentoTitle: {
-        fontSize: '2rem',
+        fontSize: '2.5rem',
         fontFamily: theme.typography.h2.fontFamily,
         fontWeight: 700,
-        lineHeight: 1.2,
-        marginBottom: theme.spacing(3),
+        lineHeight: 1.1,
+        marginBottom: theme.spacing(4),
         [theme.breakpoints.up('md')]: {
-            fontSize: '2.5rem',
+            fontSize: '3.5rem',
         }
     },
     bentoDescription: {
-        fontSize: '1rem',
-        color: 'rgba(255, 255, 255, 0.8)', // Lighter text on dark background
-        lineHeight: 1.6,
-        marginBottom: theme.spacing(4),
+        fontSize: '1.25rem',
+        color: 'rgba(255, 255, 255, 0.9)', // Lighter text on dark background
+        lineHeight: 1.7,
+        letterSpacing: '0.01em',
+        marginBottom: theme.spacing(5),
     },
     bentoButton: {
         backgroundColor: theme.palette.secondary.main, // Lime Green
