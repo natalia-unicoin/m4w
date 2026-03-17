@@ -38,8 +38,8 @@ export const useStyles = makeStyles()((theme) => ({
     title: {
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700, // bold
-        marginBottom: theme.spacing(2), // Tightened margin
-        lineHeight: 1, // Tighter line-height
+        marginBottom: theme.spacing(1), // Extremely tight margin between title and subtitle
+        lineHeight: 0.95, // Even tighter line-height
         color: theme.palette.text.primary,
         fontSize: '3rem',
         [theme.breakpoints.up('md')]: {
