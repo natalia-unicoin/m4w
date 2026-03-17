@@ -258,7 +258,7 @@ export const useStyles = makeStyles()((theme) => ({
         gap: theme.spacing(3),
         marginTop: theme.spacing(6),
         [theme.breakpoints.up('lg')]: {
-            gridTemplateColumns: '1.3fr 1fr', // Wider text column
+            gridTemplateColumns: '1.5fr 1fr', // Much wider text column
             gridTemplateRows: 'repeat(2, 340px)', // Slightly taller rows to fit content
         }
     },
@@ -283,7 +283,10 @@ export const useStyles = makeStyles()((theme) => ({
         boxShadow: 'none',
         [theme.breakpoints.up('lg')]: {
             gridRow: 'span 2',
-            padding: theme.spacing(6, 8), // More side padding on desktop
+            paddingTop: theme.spacing(6),
+            paddingBottom: theme.spacing(6),
+            paddingLeft: theme.spacing(8),
+            paddingRight: theme.spacing(4), // Less padding on the right to stretch text
         }
     },
     bentoPill: {
