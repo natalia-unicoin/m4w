@@ -274,13 +274,16 @@ export const useStyles = makeStyles()((theme) => ({
         gridColumn: 'span 1',
         backgroundColor: theme.palette.primary.main, // Dark Indigo / Purple
         color: theme.palette.common.white,
-        padding: theme.spacing(5),
+        padding: theme.spacing(4, 3), // Smaller padding for mobile to give text room
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'flex-start',
         borderRadius: '1.5rem', // Force radius here as well
         boxShadow: 'none',
+        [theme.breakpoints.up('md')]: {
+            padding: theme.spacing(5), // Intermediate padding for tablets
+        },
         [theme.breakpoints.up('lg')]: {
             gridRow: 'span 2',
             paddingTop: theme.spacing(6),
@@ -300,21 +303,28 @@ export const useStyles = makeStyles()((theme) => ({
         display: 'inline-block',
     },
     bentoTitle: {
-        fontSize: '2.5rem',
+        fontSize: '2rem', // Reduced for iPhone screens
         fontFamily: theme.typography.h2.fontFamily,
         fontWeight: 700,
         lineHeight: 1.1,
         marginBottom: theme.spacing(3), // Tighter margin
         [theme.breakpoints.up('md')]: {
+            fontSize: '2.5rem',
+        },
+        [theme.breakpoints.up('lg')]: {
             fontSize: '3.5rem',
         }
     },
     bentoDescription: {
-        fontSize: '1.25rem',
+        fontSize: '1.125rem', // Reduced for iPhone screens
         color: 'rgba(255, 255, 255, 0.9)', // Lighter text on dark background
-        lineHeight: 1.7,
+        lineHeight: 1.6,
         letterSpacing: '0.01em',
         marginBottom: theme.spacing(4), // Tighter margin
+        [theme.breakpoints.up('md')]: {
+            fontSize: '1.25rem',
+            lineHeight: 1.7,
+        }
     },
     bentoButton: {
         backgroundColor: theme.palette.secondary.main, // Lime Green
