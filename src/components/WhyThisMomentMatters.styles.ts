@@ -42,12 +42,19 @@ export const useStyles = makeStyles()((theme) => ({
         textAlign: 'center',
     },
     overTitle: {
-        fontFamily: theme.typography.subtitle1.fontFamily, // Caveat or similar cursive for elegance
-        color: theme.palette.info.main, // Light purple
-        fontSize: '2rem',
-        marginBottom: theme.spacing(2),
+        fontFamily: theme.typography.body1.fontFamily, // Inter
+        color: '#111111', // Black text
+        backgroundColor: '#ffffff', // White background
+        fontSize: '0.875rem', // Smaller text for a badge
+        fontWeight: 600, // SemiBold
+        textTransform: 'uppercase',
+        letterSpacing: '0.05em',
+        padding: '8px 24px', // Pill padding
+        borderRadius: '9999px', // Pill shape
+        marginBottom: theme.spacing(4),
+        display: 'inline-block', // Make it fit the content
         [theme.breakpoints.up('md')]: {
-            fontSize: '3rem',
+            fontSize: '1rem',
         }
     },
     title: {

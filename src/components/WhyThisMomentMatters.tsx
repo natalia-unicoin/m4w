@@ -17,7 +17,7 @@ const WhyThisMomentMatters = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 1, ease: "easeOut" }}
                     >
-                        <p className={classes.overTitle}>The Time is Now</p>
+                        <div className={classes.overTitle}>FROM INCOME TO WEALTH</div>
                         <h2 className={classes.title}>
                             Why This Moment<br />Matters
                         </h2>
