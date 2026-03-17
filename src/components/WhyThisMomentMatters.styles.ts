@@ -43,16 +43,13 @@ export const useStyles = makeStyles()((theme) => ({
     },
     overTitle: {
         fontFamily: theme.typography.body1.fontFamily, // Inter
-        color: '#111111', // Black text
-        backgroundColor: '#ffffff', // White background
-        fontSize: '0.875rem', // Smaller text for a badge
+        color: '#B79DEC', // Requested light purple color
+        fontSize: '0.875rem',
         fontWeight: 600, // SemiBold
         textTransform: 'uppercase',
         letterSpacing: '0.05em',
-        padding: '8px 24px', // Pill padding
-        borderRadius: '9999px', // Pill shape
         marginBottom: theme.spacing(4),
-        display: 'inline-block', // Make it fit the content
+        display: 'inline-block',
         [theme.breakpoints.up('md')]: {
             fontSize: '1rem',
         }
