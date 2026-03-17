@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles()((theme) => ({
     section: {
         position: 'relative',
-        height: '100vh',
+        minHeight: '110vh', // Taller than screen height per user request
         width: '100%',
         display: 'flex',
         alignItems: 'flex-end', // Push content to bottom
@@ -13,6 +13,7 @@ export const useStyles = makeStyles()((theme) => ({
         color: theme.palette.text.primary,
         paddingBottom: theme.spacing(8), // Add padding at bottom
         [theme.breakpoints.up('md')]: {
+            minHeight: '120vh', // Taller on larger screens
             paddingBottom: theme.spacing(12),
         }
     },
