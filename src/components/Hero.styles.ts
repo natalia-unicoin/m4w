@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles()((theme) => ({
     section: {
         position: 'relative',
-        minHeight: '110vh', // Taller than screen height per user request
+        minHeight: '100vh', // Standard viewport height
         width: '100%',
         display: 'flex',
         alignItems: 'flex-end', // Push content to bottom
@@ -11,10 +11,9 @@ export const useStyles = makeStyles()((theme) => ({
         overflow: 'hidden',
         backgroundColor: '#F8F8FA',
         color: theme.palette.text.primary,
-        paddingBottom: theme.spacing(8), // Add padding at bottom
+        paddingBottom: theme.spacing(4), // Less padding to drop text lower
         [theme.breakpoints.up('md')]: {
-            minHeight: '120vh', // Taller on larger screens
-            paddingBottom: theme.spacing(12),
+            paddingBottom: theme.spacing(6), // Less padding on desktop too
         }
     },
     bgWrapper: {
@@ -23,7 +22,8 @@ export const useStyles = makeStyles()((theme) => ({
         zIndex: 0,
         backgroundColor: theme.palette.info.main, // Fallback color
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center top', // Keep face visible at the top
+        backgroundRepeat: 'no-repeat',
     },
     content: {
         position: 'relative',
