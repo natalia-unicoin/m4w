@@ -99,6 +99,56 @@ export const useStyles = makeStyles()((theme) => ({
             transform: 'scale(1.05)',
         },
     },
+    scrollIndicatorContainer: {
+        position: 'absolute',
+        bottom: theme.spacing(4),
+        left: '50%',
+        transform: 'translateX(-50%)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: theme.spacing(1),
+        zIndex: 20,
+        [theme.breakpoints.up('md')]: {
+            bottom: theme.spacing(8),
+        }
+    },
+    scrollMouse: {
+        width: '30px',
+        height: '50px',
+        border: `2px solid ${theme.palette.text.primary}`,
+        borderRadius: '15px',
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'center',
+        paddingTop: '6px',
+        opacity: 0.6,
+    },
+    scrollWheel: {
+        width: '4px',
+        height: '8px',
+        backgroundColor: theme.palette.text.primary,
+        borderRadius: '2px',
+    },
+    sideTracker: {
+        position: 'absolute',
+        right: '0',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        width: '4px',
+        height: '120px',
+        backgroundColor: 'rgba(0,0,0,0.1)',
+        zIndex: 20,
+        display: 'none',
+        [theme.breakpoints.up('lg')]: {
+            display: 'block',
+        }
+    },
+    sideTrackerFill: {
+        width: '100%',
+        backgroundColor: theme.palette.primary.main,
+        borderRadius: '2px',
+    },
     secondaryButton: {
         backgroundColor: 'transparent',
         color: theme.palette.text.primary, // Dark text
