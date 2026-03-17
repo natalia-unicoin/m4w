@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useStyles } from './HowItWorks.styles';
 import { useModal } from '@/context/ModalContext';
+import { getImagePath } from '@/utils/image';
 
 const SystemSection = () => {
     const { classes } = useStyles();
@@ -38,6 +39,7 @@ const SystemSection = () => {
                     {/* Top Right Placeholder */}
                     <motion.div
                         className={`${classes.bentoBlock} ${classes.bentoImageTopRight}`}
+                        style={{ backgroundImage: `url('${getImagePath('images/img2.png')}')` }}
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -47,6 +49,7 @@ const SystemSection = () => {
                     {/* Bottom Right Placeholder */}
                     <motion.div
                         className={`${classes.bentoBlock} ${classes.bentoImageBottomRight}`}
+                        style={{ backgroundImage: `url('${getImagePath('images/img1.png')}')` }}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}

@@ -333,7 +333,6 @@ export const useStyles = makeStyles()((theme) => ({
     bentoImageTopRight: {
         gridColumn: 'span 1',
         backgroundColor: theme.palette.secondary.main, // Fallback color
-        backgroundImage: "url('/images/img2.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 20%', // Shift to focus on faces depending on the image format
         minHeight: '300px',
@@ -346,7 +345,6 @@ export const useStyles = makeStyles()((theme) => ({
     bentoImageBottomRight: {
         gridColumn: 'span 1',
         backgroundColor: theme.palette.text.secondary, // Fallback color
-        backgroundImage: "url('/images/img1.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '300px',
