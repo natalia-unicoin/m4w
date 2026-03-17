@@ -11,9 +11,9 @@ export const useStyles = makeStyles()((theme) => ({
         overflow: 'hidden',
         backgroundColor: '#F8F8FA',
         color: theme.palette.text.primary,
-        paddingBottom: theme.spacing(4), // Less padding to drop text lower
+        paddingBottom: 0, // Removed padding to let it hit the bottom edge
         [theme.breakpoints.up('md')]: {
-            paddingBottom: theme.spacing(6), // Less padding on desktop too
+            paddingBottom: 0,
         }
     },
     bgWrapper: {
@@ -34,7 +34,8 @@ export const useStyles = makeStyles()((theme) => ({
         maxWidth: '64rem', // max-w-5xl
         marginLeft: 'auto',
         marginRight: 'auto',
-        padding: '3rem',
+        paddingTop: '3rem',
+        paddingBottom: '2rem', // Minimal padding down here
         backgroundColor: 'transparent',
     },
     title: {
