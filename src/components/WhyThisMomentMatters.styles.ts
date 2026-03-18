@@ -60,15 +60,11 @@ export const useStyles = makeStyles()((theme) => ({
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700,
         marginBottom: theme.spacing(8),
-        fontSize: '3.5rem',
+        fontSize: '2.25rem',
         lineHeight: 1.1,
         letterSpacing: '-0.02em',
         [theme.breakpoints.up('md')]: {
-            fontSize: '5rem',
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '6.5rem',
-            lineHeight: 1,
+            fontSize: '3.5rem',
         }
     },
     textContent: {
@@ -76,7 +72,7 @@ export const useStyles = makeStyles()((theme) => ({
         flexDirection: 'column',
     },
     leadText: {
-        fontSize: '1.25rem',
+        fontSize: '1.125rem',
         color: theme.palette.common.white,
         lineHeight: 1.8,
         fontWeight: 400,
@@ -85,7 +81,7 @@ export const useStyles = makeStyles()((theme) => ({
         margin: '0 auto',
         opacity: 0.9,
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.75rem',
+            fontSize: '1.25rem',
         }
     },
     middleText: {
@@ -97,7 +93,7 @@ export const useStyles = makeStyles()((theme) => ({
         maxWidth: '800px',
         margin: '0 auto',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.375rem',
+            fontSize: '1.25rem',
         }
     },
     description: {

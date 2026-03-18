@@ -52,13 +52,10 @@ export const useStyles = makeStyles()((theme) => ({
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700,
         marginBottom: theme.spacing(4),
-        fontSize: '2.5rem',
+        fontSize: '2.25rem',
         lineHeight: 1.1,
         [theme.breakpoints.up('md')]: {
             fontSize: '3.5rem',
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem',
         }
     },
     highlight: {
@@ -73,12 +70,12 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     leadText: {
-        fontSize: '1.25rem', // Larger text for the first sentence
+        fontSize: '1.125rem', // Larger text for the first sentence
         color: theme.palette.text.primary,
         marginBottom: theme.spacing(4),
         lineHeight: 1.6,
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem',
+            fontSize: '1.25rem',
         }
     },
     description: {
@@ -306,26 +303,23 @@ export const useStyles = makeStyles()((theme) => ({
         display: 'inline-block',
     },
     bentoTitle: {
-        fontSize: '2rem', // Reduced for iPhone screens
+        fontSize: '1.5rem', // Reduced for iPhone screens
         fontFamily: theme.typography.h2.fontFamily,
         fontWeight: 700,
         lineHeight: 1.1,
         marginBottom: theme.spacing(3), // Tighter margin
         [theme.breakpoints.up('md')]: {
-            fontSize: '2.5rem',
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '3.5rem',
+            fontSize: '2rem',
         }
     },
     bentoDescription: {
-        fontSize: '1.125rem', // Reduced for iPhone screens
+        fontSize: '1rem', // Reduced for iPhone screens
         color: 'rgba(255, 255, 255, 0.9)', // Lighter text on dark background
         lineHeight: 1.6,
         letterSpacing: '0.01em',
         marginBottom: theme.spacing(4), // Tighter margin
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem',
+            fontSize: '1.125rem',
             lineHeight: 1.7,
         }
     },

@@ -41,7 +41,7 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     title: {
-        fontSize: '2.5rem', // text-4xl
+        fontSize: '2.25rem', // text-4xl
         fontFamily: theme.typography.h1.fontFamily, // Display
         fontWeight: 700, // font-bold
         marginBottom: theme.spacing(3), // mb-6
@@ -49,13 +49,10 @@ export const useStyles = makeStyles()((theme) => ({
         [theme.breakpoints.up('md')]: {
             fontSize: '3.5rem', // text-5xl
             marginBottom: theme.spacing(4), // mb-8
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem', // text-6xl
         }
     },
     description: {
-        fontSize: '1.125rem', // text-lg
+        fontSize: '1rem', // text-lg
         fontWeight: 400,
         lineHeight: 1.625, // leading-relaxed
         color: theme.palette.text.primary,
@@ -63,7 +60,7 @@ export const useStyles = makeStyles()((theme) => ({
         marginLeft: 'auto',
         marginRight: 'auto',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem', // text-xl
+            fontSize: '1.125rem', // text-xl
         }
     },
     grid: {

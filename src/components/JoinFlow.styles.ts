@@ -53,28 +53,28 @@ export const useStyles = makeStyles()((theme) => ({
         color: '#2A2671',
     },
     title: {
-        fontSize: '2.25rem', // text-4xl
+        fontSize: '3rem', // text-5xl equivalent
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700,
         marginBottom: theme.spacing(2),
         letterSpacing: '-0.02em',
         lineHeight: 1.1,
         [theme.breakpoints.up('md')]: {
-            fontSize: '3.5rem',
+            fontSize: '4.25rem',
             marginBottom: theme.spacing(3),
         },
         [theme.breakpoints.up('lg')]: {
-            fontSize: '4rem',
+            fontSize: '5.25rem',
         }
     },
     subtitle: {
-        fontSize: '1.25rem',
+        fontSize: '1.125rem',
         fontWeight: 500,
         color: '#2A2671',
         marginBottom: theme.spacing(4),
         lineHeight: 1.5,
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem',
+            fontSize: '1.25rem',
             marginBottom: theme.spacing(5),
         }
     },
@@ -89,7 +89,7 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     description: {
-        fontSize: '1.125rem', // text-lg
+        fontSize: '1rem', // text-base
         fontWeight: 400, // font-normal
         marginBottom: theme.spacing(6), // mb-12
         maxWidth: '48rem', // max-w-3xl
@@ -98,7 +98,7 @@ export const useStyles = makeStyles()((theme) => ({
         lineHeight: 1.625,
         color: '#2A2671', // updated color
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem', // text-xl
+            fontSize: '1.125rem', // text-lg
             marginBottom: theme.spacing(8),
         }
     },

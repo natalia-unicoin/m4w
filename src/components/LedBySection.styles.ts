@@ -79,7 +79,7 @@ export const useStyles = makeStyles()((theme) => ({
     title: {
         fontFamily: theme.typography.h2.fontFamily,
         fontWeight: 700,
-        fontSize: '2.5rem',
+        fontSize: '2.25rem',
         color: theme.palette.text.primary,
         marginBottom: theme.spacing(3),
         lineHeight: 1.1,
@@ -92,12 +92,12 @@ export const useStyles = makeStyles()((theme) => ({
         flexDirection: 'column',
     },
     leadText: {
-        fontSize: '1.25rem',
+        fontSize: '1.125rem',
         color: theme.palette.text.primary,
         lineHeight: 1.625, // leading-relaxed
         marginBottom: theme.spacing(3),
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem',
+            fontSize: '1.25rem',
         }
     },
     description: {

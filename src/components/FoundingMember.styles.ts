@@ -71,26 +71,23 @@ export const useStyles = makeStyles()((theme) => ({
         backgroundColor: '#D1D5DB', // Light Gray
     },
     title: {
-        fontSize: '3rem', // text-5xl
+        fontSize: '2.25rem', // text-4xl
         fontFamily: theme.typography.h1.fontFamily, // Display
         fontWeight: 700, // font-bold
         marginBottom: theme.spacing(4), // mb-8
         lineHeight: 1.1,
         color: theme.palette.text.primary, // Dark blue/indigo
         [theme.breakpoints.up('md')]: {
-            fontSize: '4rem', // text-6xl
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '5rem', // text-7xl
+            fontSize: '3.5rem', // text-6xl
         }
     },
     leadText: {
-        fontSize: '1.25rem', // Larger text for the first sentence
+        fontSize: '1.125rem', // Larger text for the first sentence
         color: theme.palette.text.primary,
         marginBottom: theme.spacing(4),
         lineHeight: 1.6,
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem',
+            fontSize: '1.25rem',
         }
     },
     description: {

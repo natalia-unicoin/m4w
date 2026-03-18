@@ -42,10 +42,7 @@ export const useStyles = makeStyles()((theme) => ({
         lineHeight: 0.9,
         fontSize: '2.25rem', // text-4xl
         [theme.breakpoints.up('md')]: {
-            fontSize: '3.75rem', // text-6xl
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem', // text-7xl
+            fontSize: '3.5rem', // text-6xl
         }
     },
     highlight: {
@@ -60,15 +57,12 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     description: {
-        fontSize: '1.25rem', // text-xl
+        fontSize: '1.125rem', // text-lg
         fontWeight: 300, // font-light
         lineHeight: 1.625, // leading-relaxed
         color: '#464243',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem', // text-2xl
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '1.875rem', // text-3xl
+            fontSize: '1.25rem', // text-xl
         }
     },
     boldBrand: {

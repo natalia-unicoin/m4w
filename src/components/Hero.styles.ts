@@ -55,7 +55,7 @@ export const useStyles = makeStyles()((theme) => ({
     },
     subtitle: {
         fontFamily: theme.typography.body1.fontFamily,
-        fontSize: '1rem', // Softer size to match the screenshot
+        fontSize: '1.125rem', // Softer size to match the screenshot
         marginBottom: theme.spacing(6),
         color: 'rgba(255, 255, 255, 0.85)', // Slight transparency for the subtitle
         maxWidth: '42rem',
@@ -63,7 +63,7 @@ export const useStyles = makeStyles()((theme) => ({
         marginRight: 'auto',
         lineHeight: 1.6,
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.125rem', // Slightly larger on tablet
+            fontSize: '1.25rem', // Slightly larger on tablet
         }
     },
     highlight: {

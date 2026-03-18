@@ -44,12 +44,9 @@ export const useStyles = makeStyles()((theme) => ({
         fontWeight: 700, // bold
         lineHeight: 1.1,
         color: theme.palette.text.primary,
-        fontSize: '2.5rem',
+        fontSize: '2.25rem',
         [theme.breakpoints.up('md')]: {
             fontSize: '3.5rem',
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem',
         }
     },
     highlight: {
@@ -145,7 +142,7 @@ export const useStyles = makeStyles()((theme) => ({
         padding: theme.spacing(4), // p-8
     },
     cardTitle: {
-        fontSize: '2rem', // text-3xl
+        fontSize: '1.5rem', // text-2xl
         fontFamily: theme.typography.subtitle1.fontFamily, // Cursive (Caveat)
         fontWeight: 700, // Bold
         color: theme.palette.common.white, // Cream
@@ -153,7 +150,7 @@ export const useStyles = makeStyles()((theme) => ({
         lineHeight: 1.1,
         minHeight: '2.2em', // Ensures all titles have the same height for top alignment
         [theme.breakpoints.up('md')]: {
-            fontSize: '2.5rem', // text-4xl
+            fontSize: '2rem', // text-3xl
         }
     },
     descriptionContainer: {
@@ -167,6 +164,9 @@ export const useStyles = makeStyles()((theme) => ({
         fontWeight: 400,
         transition: 'all 0.5s ease',
         paddingBottom: theme.spacing(2),
+        [theme.breakpoints.up('md')]: {
+            fontSize: '1.125rem',
+        }
     },
     arrowButton: {
         position: 'absolute',

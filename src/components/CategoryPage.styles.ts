@@ -71,7 +71,7 @@ export const useStyles = makeStyles()((theme) => ({
         backgroundColor: 'rgba(255,255,255,0.5)',
     },
     heroTitle: {
-        fontSize: '3.75rem', // text-6xl
+        fontSize: '3rem', // text-6xl
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700,
         letterSpacing: '-0.05em', // tracking-tighter
@@ -79,10 +79,10 @@ export const useStyles = makeStyles()((theme) => ({
         lineHeight: 0.9,
         marginBottom: theme.spacing(4), // mb-8
         [theme.breakpoints.up('md')]: {
-            fontSize: '6rem', // text-8xl
+            fontSize: '4.25rem', // text-8xl
         },
         [theme.breakpoints.up('lg')]: {
-            fontSize: '8rem', // text-9xl
+            fontSize: '5.25rem', // text-9xl
         }
     },
     ctaButton: {
@@ -131,10 +131,7 @@ export const useStyles = makeStyles()((theme) => ({
         lineHeight: 1.25,
         color: theme.palette.common.black,
         [theme.breakpoints.up('md')]: {
-            fontSize: '3.75rem', // text-6xl
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem', // text-7xl
+            fontSize: '3.5rem', // text-6xl
         }
     },
     bentoSection: {
@@ -170,7 +167,7 @@ export const useStyles = makeStyles()((theme) => ({
         marginBottom: theme.spacing(3), // mb-6
         color: theme.palette.common.black,
         [theme.breakpoints.up('md')]: {
-            fontSize: '3.75rem', // text-6xl
+            fontSize: '3.5rem', // text-6xl
         }
     },
     bentoGrid: {
@@ -234,13 +231,13 @@ export const useStyles = makeStyles()((theme) => ({
         marginBottom: theme.spacing(6), // mb-12
     },
     storiesTitle: {
-        fontSize: '1.875rem', // text-3xl
+        fontSize: '2.25rem', // text-3xl
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700,
         letterSpacing: '-0.05em', // tracking-tighter
         color: theme.palette.common.black,
         [theme.breakpoints.up('md')]: {
-            fontSize: '3rem', // text-5xl
+            fontSize: '3.5rem', // text-5xl
         }
     },
     carouselContainer: {
@@ -358,7 +355,10 @@ export const useStyles = makeStyles()((theme) => ({
         marginBottom: theme.spacing(6), // mb-12
         color: theme.palette.common.black,
         [theme.breakpoints.up('md')]: {
-            fontSize: '6rem', // text-8xl
+            fontSize: '4.25rem', // text-8xl
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '5.25rem', // text-8xl
         }
     },
     applyButton: {
