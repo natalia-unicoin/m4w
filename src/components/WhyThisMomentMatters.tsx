@@ -3,12 +3,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useStyles } from './WhyThisMomentMatters.styles';
+import { getImagePath } from '@/utils/image';
 
 const WhyThisMomentMatters = () => {
     const { classes } = useStyles();
 
     return (
-        <section id="why-now" className={classes.section}>
+        <section
+            id="why-now"
+            className={classes.section}
+            style={{ backgroundImage: `url('${getImagePath('images/violet.png')}')` }}
+        >
             <div className={classes.container}>
                 <div className={classes.textWrapper}>
                     <motion.div

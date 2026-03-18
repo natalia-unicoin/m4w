@@ -4,8 +4,10 @@ export const useStyles = makeStyles()((theme) => ({
     section: {
         paddingTop: theme.spacing(16),
         paddingBottom: theme.spacing(16),
-        backgroundColor: '#111111', // Deep dark modern background
-        backgroundImage: 'radial-gradient(circle at top right, rgba(42, 38, 113, 0.4), transparent 50%), radial-gradient(circle at bottom left, rgba(183, 157, 236, 0.1), transparent 50%)',
+        backgroundColor: '#111111', // Fallback background
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         color: theme.palette.common.white,
         overflow: 'hidden',
         position: 'relative',
