@@ -4,14 +4,15 @@ export const useStyles = makeStyles()((theme) => ({
     section: {
         position: 'relative',
         zIndex: 1,
-        minHeight: '100vh',
+        paddingTop: theme.spacing(10), // pb-20 equivalent for top
+        paddingBottom: theme.spacing(10), // pb-20
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         overflow: 'hidden',
         backgroundColor: theme.palette.text.primary, // Dark Indigo
-        paddingBottom: theme.spacing(10), // pb-20
         [theme.breakpoints.up('md')]: {
+            paddingTop: theme.spacing(16), // pb-32 equivalent for top
             paddingBottom: theme.spacing(16), // pb-32
         }
     },
@@ -115,7 +116,7 @@ export const useStyles = makeStyles()((theme) => ({
     primaryButton: {
         width: '100%',
         backgroundColor: '#EBE563', // Neon
-        color: theme.palette.common.black,
+        color: '#2A2671', // matched to the exact text color requested
         padding: '16px 32px', // px-8 py-4
         fontSize: '0.875rem', // text-sm
         fontWeight: 700,
@@ -124,7 +125,6 @@ export const useStyles = makeStyles()((theme) => ({
         border: 'none',
         borderRadius: '9999px',
         cursor: 'pointer',
-        boxShadow: theme.shadows[10], // shadow-2xl
         transition: 'all 0.3s',
         '&:hover': {
             backgroundColor: '#d4cd55',
