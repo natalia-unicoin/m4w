@@ -57,12 +57,13 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     description: {
-        fontSize: '1.125rem', // text-lg
+        fontSize: '1.25rem', // text-lg
         fontWeight: 300, // font-light
         lineHeight: 1.625, // leading-relaxed
         color: '#464243',
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem', // text-xl
+            fontSize: '1.5rem', // text-xl
         }
     },
     boldBrand: {

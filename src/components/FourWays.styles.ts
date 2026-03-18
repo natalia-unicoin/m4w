@@ -67,12 +67,13 @@ export const useStyles = makeStyles()((theme) => ({
         marginRight: 'auto',
     },
     description: {
-        fontSize: '1.125rem', // text-lg
+        fontSize: '1.25rem', // text-lg
         fontWeight: 400,
         lineHeight: 1.625, // leading-relaxed
         color: theme.palette.text.primary,
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem', // text-xl
+            fontSize: '1.5rem', // text-xl
         }
     },
     // Scroll/Grid Container

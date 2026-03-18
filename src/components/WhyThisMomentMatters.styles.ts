@@ -72,7 +72,7 @@ export const useStyles = makeStyles()((theme) => ({
         flexDirection: 'column',
     },
     leadText: {
-        fontSize: '1.125rem',
+        fontSize: '1.25rem',
         color: theme.palette.common.white,
         lineHeight: 1.8,
         fontWeight: 400,
@@ -80,20 +80,22 @@ export const useStyles = makeStyles()((theme) => ({
         maxWidth: '900px',
         margin: '0 auto',
         opacity: 0.9,
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem',
+            fontSize: '1.5rem',
         }
     },
     middleText: {
-        fontSize: '1.125rem',
+        fontSize: '1.25rem',
         fontWeight: 700,
         lineHeight: 1.8,
         color: theme.palette.info.main,
         marginBottom: theme.spacing(6),
         maxWidth: '800px',
         margin: '0 auto',
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem',
+            fontSize: '1.5rem',
         }
     },
     description: {

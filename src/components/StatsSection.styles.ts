@@ -78,12 +78,13 @@ export const useStyles = makeStyles()((theme) => ({
         marginBottom: theme.spacing(4),
     },
     leadText: {
-        fontSize: '1.125rem', // text-xl
+        fontSize: '1.25rem', // text-xl
         color: theme.palette.text.primary,
         lineHeight: 1.625, // leading-relaxed
         marginBottom: theme.spacing(4),
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem', // text-2xl
+            fontSize: '1.5rem', // text-2xl
         }
     },
     description: {

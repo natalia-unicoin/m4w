@@ -92,12 +92,13 @@ export const useStyles = makeStyles()((theme) => ({
         flexDirection: 'column',
     },
     leadText: {
-        fontSize: '1.125rem',
+        fontSize: '1.25rem',
         color: theme.palette.text.primary,
         lineHeight: 1.625, // leading-relaxed
         marginBottom: theme.spacing(3),
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem',
+            fontSize: '1.5rem',
         }
     },
     description: {

@@ -68,13 +68,14 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     subtitle: {
-        fontSize: '1.125rem',
+        fontSize: '1.25rem',
         fontWeight: 500,
         color: '#2A2671',
         marginBottom: theme.spacing(4),
         lineHeight: 1.5,
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem',
+            fontSize: '1.5rem',
             marginBottom: theme.spacing(5),
         }
     },

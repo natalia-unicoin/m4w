@@ -82,12 +82,13 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     leadText: {
-        fontSize: '1.125rem', // Larger text for the first sentence
+        fontSize: '1.25rem', // Larger text for the first sentence
         color: theme.palette.text.primary,
         marginBottom: theme.spacing(4),
         lineHeight: 1.6,
+        textWrap: 'balance',
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.25rem',
+            fontSize: '1.5rem',
         }
     },
     description: {
