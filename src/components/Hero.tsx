@@ -30,7 +30,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
                     Women Shaping<br />
-                    the Future of <span className={classes.highlight}>Wealth</span>
+                    the Future of <span className={classes.highlight}>Wealth.</span>
                 </motion.h1>
 
                 <motion.p
