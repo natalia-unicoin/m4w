@@ -59,15 +59,27 @@ export const useStyles = makeStyles()((theme) => ({
         fontSize: '2.25rem', // text-4xl
         fontFamily: theme.typography.h1.fontFamily,
         fontWeight: 700,
-        marginBottom: theme.spacing(4), // mb-8
-        letterSpacing: '-0.05em', // tracking-tighter
-        lineHeight: 1,
+        marginBottom: theme.spacing(2),
+        letterSpacing: '-0.02em',
+        lineHeight: 1.1,
         [theme.breakpoints.up('md')]: {
-            fontSize: '3.75rem', // text-6xl
-            marginBottom: theme.spacing(5), // mb-10
+            fontSize: '3.5rem',
+            marginBottom: theme.spacing(3),
         },
         [theme.breakpoints.up('lg')]: {
-            fontSize: '4.5rem', // text-7xl
+            fontSize: '4rem',
+        }
+    },
+    subtitle: {
+        fontSize: '1.5rem',
+        fontFamily: theme.typography.h1.fontFamily,
+        fontWeight: 500,
+        color: '#EBE563', // Neon accent for the bajada
+        marginBottom: theme.spacing(4),
+        lineHeight: 1.3,
+        [theme.breakpoints.up('md')]: {
+            fontSize: '2rem',
+            marginBottom: theme.spacing(5),
         }
     },
     highlight: {
@@ -81,17 +93,17 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     description: {
-        fontSize: '1.25rem', // text-xl
-        fontWeight: 500, // font-medium
-        marginBottom: theme.spacing(5), // mb-10
+        fontSize: '1.125rem', // text-lg
+        fontWeight: 400, // font-normal
+        marginBottom: theme.spacing(6), // mb-12
         maxWidth: '48rem', // max-w-3xl
         marginLeft: 'auto',
         marginRight: 'auto',
         lineHeight: 1.625,
-        color: theme.palette.grey[200],
+        color: theme.palette.grey[300],
         [theme.breakpoints.up('md')]: {
-            fontSize: '1.5rem', // text-2xl
-            marginBottom: theme.spacing(6), // mb-12
+            fontSize: '1.25rem', // text-xl
+            marginBottom: theme.spacing(8),
         }
     },
     buttonGroup: {

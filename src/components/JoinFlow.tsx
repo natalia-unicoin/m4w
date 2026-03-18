@@ -21,20 +21,27 @@ const JoinFlow = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        Build Wealth With<br />
-                        <span className={classes.highlight}>Strategy</span>
+                        Your career created opportunity.
                     </motion.h2>
+
+                    <motion.h3
+                        className={classes.subtitle}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                    >
+                        Now build a financial system that supports your future.
+                    </motion.h3>
 
                     <motion.p
                         className={classes.description}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
+                        transition={{ delay: 0.2 }}
                     >
-                        Your career created opportunity.<br /><br />
-                        Now build a financial system that supports your future.<br /><br />
-                        <strong>Money4Women</strong> helps you structure your finances, invest with discipline, and connect with a community committed to long-term growth.
+                        Money4Women helps you structure your finances, invest with discipline, and connect with a community committed to long-term&nbsp;growth.
                     </motion.p>
 
                     <motion.div
@@ -42,7 +49,7 @@ const JoinFlow = () => {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
+                        transition={{ delay: 0.3 }}
                     >
                         <button
                             onClick={openJoinModal}
