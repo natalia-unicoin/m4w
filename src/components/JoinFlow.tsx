@@ -11,7 +11,12 @@ const JoinFlow = () => {
     const { openJoinModal, openMasterclass } = useModal();
     return (
         <section className={classes.section}>
-            {/* Solid Dark Background applied via styles */}
+            <div 
+                className={classes.bgWrapper} 
+                style={{ backgroundImage: `url(${getImagePath('/bg-cta.png')})` }}
+            >
+                <div className={classes.gradientOverlay} />
+            </div>
 
             <div className={classes.container}>
                 <div className={classes.contentWrapper}>

@@ -7,8 +7,6 @@ import Footer from "@/components/Footer";
 import JoinModal from "@/components/JoinModal";
 import ManifestoModal from "@/components/ManifestoModal";
 import MasterclassModal from "@/components/MasterclassModal";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
-
 export const metadata: Metadata = {
   title: "Money4Women - The Wealth Operating System",
   description: "A decentralized collective for creators, builders, investors, and connectors. Own your work, own your future.",
@@ -27,7 +25,6 @@ export default function RootLayout({
           <ModalProvider>
             <Navbar />
             {children}
-            <ThemeSwitcher />
             <Footer />
             <JoinModal />
             <ManifestoModal />

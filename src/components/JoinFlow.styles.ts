@@ -3,6 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles()((theme) => ({
     section: {
         position: 'relative',
+        zIndex: 1,
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
@@ -17,13 +18,9 @@ export const useStyles = makeStyles()((theme) => ({
     bgWrapper: {
         position: 'absolute',
         inset: 0,
-        zIndex: 0,
-    },
-    bgImage: {
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-        objectPosition: 'center',
+        zIndex: -1,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         filter: 'brightness(0.9) contrast(1.05)',
     },
     gradientOverlay: {

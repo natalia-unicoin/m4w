@@ -79,49 +79,6 @@ export const mainTheme = createTheme({
     },
 });
 
-export const altTheme = createTheme({
-    ...commonSettings,
-    components: {
-        MuiCssBaseline: {
-            styleOverrides: {
-                body: {
-                    backgroundColor: '#F8F8FA',
-                    color: '#2C2C2C',
-                    textWrap: 'balance',
-                },
-            },
-        },
-        MuiButton: {
-            styleOverrides: {
-                root: {
-                    borderRadius: 9999,
-                    textTransform: 'uppercase',
-                    fontWeight: 700,
-                    padding: '12px 24px',
-                },
-                containedPrimary: {
-                    backgroundColor: '#CAD83B',
-                    color: '#ffffff',
-                    '&:hover': { backgroundColor: '#B8C535' },
-                },
-                containedSecondary: {
-                    backgroundColor: '#FD9A34',
-                    color: '#ffffff',
-                    '&:hover': { backgroundColor: '#E48A2E' },
-                },
-            },
-        },
-    },
-    palette: {
-        mode: 'light',
-        primary: { main: '#CAD83B' },
-        secondary: { main: '#FD9A34' },
-        info: { main: '#A88AEE' },
-        background: { default: '#F8F8FA', paper: '#F8F8FA' },
-        text: { primary: '#2C2C2C', secondary: '#4A4A4A' },
-        common: { black: '#2C2C2C', white: '#ffffff' }
-    },
-});
 
 // Default to mainTheme to avoid breaking external direct imports (if any)
 export default mainTheme;
