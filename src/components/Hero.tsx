@@ -54,12 +54,6 @@ const Hero = () => {
                     >
                         JOIN MONEY4WOMEN
                     </button>
-                    <button
-                        onClick={openMasterclass}
-                        className={classes.outlineButton}
-                    >
-                        REGISTER FOR THE MASTERCLASS
-                    </button>
                 </motion.div>
             </div>
 
