@@ -32,7 +32,8 @@ const FourWays = () => {
         {
             title: "Leadership",
             description: "You turn financial capability into greater ownership, influence, and impact in your life and career.",
-            color: "#2A2671" // M4W Dark Indigo
+            color: "#2A2671", // M4W Dark Indigo
+            image: '/4.png'
         }
     ];
 
