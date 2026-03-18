@@ -4,6 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useStyles } from './FourWays.styles';
 
+import { getImagePath } from '../utils/image';
+
 const FourWays = () => {
     const { classes } = useStyles();
     const [activeIndex, setActiveIndex] = React.useState(0);
@@ -25,6 +27,7 @@ const FourWays = () => {
             title: "Investment Discipline",
             description: "You learn to evaluate opportunities with frameworks across traditional and digital assets, without hype or guesswork.",
             color: "#BFD35B", // M4W Lime Green
+            image: '/3.png'
         },
         {
             title: "Leadership",
@@ -75,8 +78,17 @@ const FourWays = () => {
                                 onMouseLeave={() => setExpandedCard(null)}
                                 onClick={() => setExpandedCard(expandedCard === index ? null : index)}
                             >
-                                {/* Background Image Placeholder */}
-                                <div className={classes.cardImagePlaceholder} />
+                                {/* Background Image Placeholder or Real Image */}
+                                {card.image ? (
+                                    <img 
+                                        src={getImagePath(card.image)} 
+                                        alt={card.title} 
+                                        className={classes.cardImagePlaceholder} 
+                                        style={{ objectFit: 'cover' }} 
+                                    />
+                                ) : (
+                                    <div className={classes.cardImagePlaceholder} />
+                                )}
 
                                 {/* Overlay */}
                                 <div
