@@ -21,7 +21,8 @@ const JoinFlow = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        Your career created opportunity.
+                        Build Wealth With<br />
+                        <span className={classes.highlight}>Strategy.</span>
                     </motion.h2>
 
                     <motion.h3
@@ -31,6 +32,7 @@ const JoinFlow = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
+                        Your career created opportunity.<br />
                         Now build a financial system that supports your future.
                     </motion.h3>
 

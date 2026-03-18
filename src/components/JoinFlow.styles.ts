@@ -71,14 +71,13 @@ export const useStyles = makeStyles()((theme) => ({
         }
     },
     subtitle: {
-        fontSize: '1.5rem',
-        fontFamily: theme.typography.h1.fontFamily,
+        fontSize: '1.25rem',
         fontWeight: 500,
-        color: '#EBE563', // Neon accent for the bajada
+        color: theme.palette.common.white,
         marginBottom: theme.spacing(4),
-        lineHeight: 1.3,
+        lineHeight: 1.5,
         [theme.breakpoints.up('md')]: {
-            fontSize: '2rem',
+            fontSize: '1.5rem',
             marginBottom: theme.spacing(5),
         }
     },
