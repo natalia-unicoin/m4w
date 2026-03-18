@@ -21,12 +21,11 @@ export const useStyles = makeStyles()((theme) => ({
         zIndex: -1,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        filter: 'brightness(0.9) contrast(1.05)',
     },
     gradientOverlay: {
         position: 'absolute',
         inset: 0,
-        background: 'linear-gradient(to top, rgba(0,0,0,0.7), transparent, transparent)',
+        background: 'none', // Removed dark gradient for dark text visibility
     },
     container: {
         maxWidth: '1280px',
@@ -50,7 +49,7 @@ export const useStyles = makeStyles()((theme) => ({
         marginLeft: 'auto',
         marginRight: 'auto',
         textAlign: 'center',
-        color: theme.palette.common.white,
+        color: '#2A2671',
     },
     title: {
         fontSize: '2.25rem', // text-4xl
@@ -70,7 +69,7 @@ export const useStyles = makeStyles()((theme) => ({
     subtitle: {
         fontSize: '1.25rem',
         fontWeight: 500,
-        color: theme.palette.common.white,
+        color: '#2A2671',
         marginBottom: theme.spacing(4),
         lineHeight: 1.5,
         [theme.breakpoints.up('md')]: {
@@ -96,7 +95,7 @@ export const useStyles = makeStyles()((theme) => ({
         marginLeft: 'auto',
         marginRight: 'auto',
         lineHeight: 1.625,
-        color: theme.palette.grey[300],
+        color: '#2A2671', // updated color
         [theme.breakpoints.up('md')]: {
             fontSize: '1.25rem', // text-xl
             marginBottom: theme.spacing(8),
@@ -140,19 +139,19 @@ export const useStyles = makeStyles()((theme) => ({
     secondaryButton: {
         width: '100%',
         backgroundColor: 'transparent',
-        color: theme.palette.common.white,
+        color: '#2A2671', // updated to match text
         padding: '16px 32px',
         fontSize: '0.875rem',
         fontWeight: 700,
         letterSpacing: '0.1em',
         textTransform: 'uppercase',
-        border: `1px solid rgba(255,255,255,0.3)`,
+        border: `1px solid #2A2671`,
         borderRadius: '9999px',
         backdropFilter: 'blur(4px)',
         cursor: 'pointer',
         transition: 'all 0.3s',
         '&:hover': {
-            backgroundColor: 'rgba(255,255,255,0.1)',
+            backgroundColor: 'rgba(42,38,113,0.1)', // #2A2671 with 10% opacity
         },
         [theme.breakpoints.up('md')]: {
             width: 'auto',
