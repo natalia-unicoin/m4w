@@ -115,8 +115,8 @@ export const useStyles = makeStyles()((theme) => ({
     },
     primaryButton: {
         width: '100%',
-        backgroundColor: '#EBE563', // Neon
-        color: '#2A2671', // matched to the exact text color requested
+        backgroundColor: '#2A2671', // User requested exact matching background
+        color: theme.palette.common.white, // White text
         padding: '16px 32px', // px-8 py-4
         fontSize: '0.875rem', // text-sm
         fontWeight: 700,
@@ -127,7 +127,7 @@ export const useStyles = makeStyles()((theme) => ({
         cursor: 'pointer',
         transition: 'all 0.3s',
         '&:hover': {
-            backgroundColor: '#d4cd55',
+            backgroundColor: '#1d1a50', // darker shade on hover
             transform: 'scale(1.05)',
         },
         [theme.breakpoints.up('md')]: {
