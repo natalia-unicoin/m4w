@@ -27,13 +27,13 @@ const FourWays = () => {
             title: "Investment Discipline",
             description: "You learn to evaluate opportunities with frameworks across traditional and digital assets, without hype or guesswork.",
             color: "#BFD35B", // M4W Lime Green
-            image: '/3.png'
+            image: '/investment.png'
         },
         {
             title: "Leadership",
             description: "You turn financial capability into greater ownership, influence, and impact in your life and career.",
             color: "#2A2671", // M4W Dark Indigo
-            image: '/4.png'
+            image: '/leadership.png'
         }
     ];
 
