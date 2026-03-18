@@ -11,7 +11,11 @@ const SystemSection = () => {
     const { openMasterclass } = useModal();
 
     return (
-        <section id="system" className={classes.section}>
+        <section
+            id="system"
+            className={classes.section}
+            style={{ backgroundImage: `url('${getImagePath('images/bg-square.png')}')` }}
+        >
             <div className={classes.container}>
                 <div className={classes.bentoGrid}>
                     {/* Text Block */}

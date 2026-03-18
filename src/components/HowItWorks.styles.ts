@@ -3,6 +3,9 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles()((theme) => ({
     section: {
         backgroundColor: '#F8F8FA',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         paddingTop: theme.spacing(10),
         paddingBottom: theme.spacing(6),
         color: theme.palette.text.primary,
