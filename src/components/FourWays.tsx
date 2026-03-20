@@ -17,6 +17,7 @@ const FourWays = () => {
             title: "Clarity",
             description: "You see your financial reality clearly, your income, priorities, and long-term direction.",
             color: "#2A2671", // M4W Primary Purple
+            image: '/box1.jpg'
         },
         {
             title: "Structure",
