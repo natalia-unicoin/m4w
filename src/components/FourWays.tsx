@@ -6,13 +6,21 @@ import { useStyles } from './FourWays.styles';
 
 import { getImagePath } from '../utils/image';
 
+interface Way {
+    title: string;
+    description: string;
+    color: string;
+    image?: string;
+    imagePosition?: string;
+}
+
 const FourWays = () => {
     const { classes } = useStyles();
     const [activeIndex, setActiveIndex] = React.useState(0);
     const [expandedCard, setExpandedCard] = React.useState<number | null>(null);
     const scrollContainerRef = React.useRef<HTMLDivElement>(null);
 
-    const ways = [
+    const ways: Way[] = [
         {
             title: "Clarity",
             description: "You see your financial reality clearly, your income, priorities, and long-term direction.",
@@ -23,7 +31,8 @@ const FourWays = () => {
             title: "Structure",
             description: "You install a personal wealth system that organizes your money and strengthens your decision-making.",
             color: "#B79DEC", // M4W Light Purple
-            image: '/box2.jpg'
+            image: '/box2.jpg',
+            imagePosition: 'center 20%'
         },
         {
             title: "Investment Discipline",
@@ -87,7 +96,7 @@ const FourWays = () => {
                                         src={getImagePath(card.image)} 
                                         alt={card.title} 
                                         className={classes.cardImagePlaceholder} 
-                                        style={{ objectFit: 'cover' }} 
+                                        style={{ objectFit: 'cover', objectPosition: card.imagePosition || 'center' }} 
                                     />
                                 ) : (
                                     <div className={classes.cardImagePlaceholder} />
@@ -96,7 +105,11 @@ const FourWays = () => {
                                 {/* Overlay */}
                                 <div
                                     className={classes.overlay}
-                                    style={{ backgroundColor: expandedCard === index ? 'rgba(0, 0, 0, 0.6)' : 'rgba(42, 38, 113, 0.4)' }}
+                                    style={{ 
+                                        background: expandedCard === index 
+                                            ? 'rgba(0, 0, 0, 0.7)' 
+                                            : 'linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 60%)' 
+                                    }}
                                 />
 
                                 {/* Content */}
