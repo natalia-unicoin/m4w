@@ -53,7 +53,7 @@ const SystemSection = () => {
                     {/* Bottom Right Placeholder */}
                     <motion.div
                         className={`${classes.bentoBlock} ${classes.bentoImageBottomRight}`}
-                        style={{ backgroundImage: `url('${getImagePath('images/img1.png')}')` }}
+                        style={{ backgroundImage: `url('${getImagePath('images/square.jpg')}')` }}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
