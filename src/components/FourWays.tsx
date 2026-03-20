@@ -31,8 +31,7 @@ const FourWays = () => {
             title: "Structure",
             description: "You install a personal wealth system that organizes your money and strengthens your decision-making.",
             color: "#B79DEC", // M4W Light Purple
-            image: '/box2.jpg',
-            imagePosition: '85% center'
+            image: '/box2.jpg'
         },
         {
             title: "Investment Discipline",
